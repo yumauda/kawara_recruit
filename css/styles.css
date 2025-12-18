@@ -2028,10 +2028,17 @@ input::placeholder {
   min-height: 100vh;
 }
 
-.p-top-scroll__block {
-  display: flex;
-  align-items: center;
-  gap: 7.5rem;
+@media screen and (min-width: 768px) {
+  .p-top-scroll__block {
+    display: flex;
+    align-items: center;
+    gap: 3.75rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-top-scroll__block {
+    gap: 7.5rem;
+  }
 }
 
 .p-top-scroll__img {

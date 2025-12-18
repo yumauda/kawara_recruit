@@ -8,13 +8,18 @@
 
 .p-top-scroll__content {
   position: relative;
-  min-height: 100vh; // 最低限ビューポートの高さを確保
+  min-height: 100vh;
 }
 
 .p-top-scroll__block {
-  display: flex;
-  align-items: center;
-  gap: rem(120);
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    gap: rem(60);
+  }
+  @include mq(lg) {
+    gap: rem(120);
+  }
 }
 
 .p-top-scroll__img {
