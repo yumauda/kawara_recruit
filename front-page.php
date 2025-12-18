@@ -4,9 +4,50 @@
     <p class="test">vite環境のテストで</p>
     <?php get_template_part('includes/reserve'); ?>
   </div>
-  <figure class="p-test__img">
-    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/adult_img.webp" alt="金属の未来をリファイン" width="431" height="38">
-  </figure>
+  <section class="p-top-scroll">
+    <div class="l-inner">
+      <div class="p-top-scroll__content">
+        <div class="p-top-scroll__block">
+          <figure class="p-top-scroll__img">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_scroll_img1.webp" alt="一枚の瓦に、400年を背負う歴史が宿る。" width="940" height="1040">
+          </figure>
+          <div class="p-top-scroll__detail">
+            <h3 class="p-top-scroll__title">一枚の瓦に、<br>400年を背負う<br>歴史が宿る。</h3>
+            <p class="p-top-scroll__text">石州瓦の起源は、400年前の江戸時代にさかのぼる。<br>
+              山陰の厳しい風雪に耐え、人々の暮らしを守るために生まれた瓦は、やがて島根の地に根づき、文化そのものとなった。<br>
+              一枚の瓦に込められた歴史は、単なる建材の域を超え、この地域が誇る伝統として受け継がれてきた。<br>
+              その重みを背負うことが、私たち職人の誇りである。</p>
+          </div>
+        </div>
+        <div class="p-top-scroll__block">
+          <figure class="p-top-scroll__img">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_scroll_img2.webp" alt="400年を背負う歴史が宿る。" width="940" height="1040">
+          </figure>
+          <div class="p-top-scroll__detail">
+            <h3 class="p-top-scroll__title">職人の手が、<br>静かに文化を<br>築いてきた。</h3>
+            <p class="p-top-scroll__text">石州瓦の強さは、自然の恵みと人の手が生み出すものだ。<br>
+              山の土を掘り、練り、形を整え、炎の中で焼き上げる。<br>
+              派手さはない。だが、その過程にこそ職人の矜持がある。<br>
+              災害に耐え、家々を守り続けてきたその力は、土と火、そして職人の手が築いた確かな証。<br>
+              この技があるからこそ、地域の暮らしは守られてきた。</p>
+          </div>
+        </div>
+        <div class="p-top-scroll__block">
+          <figure class="p-top-scroll__img">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_scroll_img3.webp" alt="揺るぎない誇りが宿る。" width="940" height="1040">
+          </figure>
+          <div class="p-top-scroll__detail">
+            <h3 class="p-top-scroll__title">一枚一枚に、<br>揺るぎない<br>誇りが宿る。</h3>
+            <p class="p-top-scroll__text">伝統はただ保存するものではなく、手を動かし続けてこそ生きる。<br>
+              400年受け継がれてきた石州瓦の技は、今を生きる私たちの覚悟によって次の世代へと渡される。<br>
+              一枚の瓦をつくるたび、私たちは文化を守り、未来を築いている。<br>
+              誇りを胸に、技を磨き、覚悟をもって受け継ぐ。<br>
+              その姿勢こそが、島根の伝統をこれからも生かし続ける道である。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="p-middle-slider">
     <div class="p-middle-slider__content">
       <!-- Slider main container -->

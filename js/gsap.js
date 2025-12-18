@@ -88,7 +88,69 @@ function initScrollAnimations() {
   });
 }
 
+/**
+ * スクロールブロック切り替えアニメーション
+ * .p-top-scroll__block を1ブロックずつふわっと切り替える
+ * スクロールに応じてセクションをピン留めし、ブロックを順次切り替え
+ */
+function initScrollBlockTransitions() {
+  // コンテナとブロック要素を取得
+  const container = document.querySelector('.p-top-scroll__content');
+  const blocks = document.querySelectorAll('.p-top-scroll__block');
+
+  // 要素が存在しない場合は処理を終了
+  if (!container || blocks.length === 0) return;
+
+  // 初期状態の設定：最初のブロックのみ表示
+  blocks.forEach((block, index) => {
+    gsap.set(block, {
+      opacity: index === 0 ? 1 : 0,
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%'
+    });
+  });
+
+  // タイムラインを作成
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      start: "top top", // コンテナが画面トップに来たらピン留め開始
+      end: `+=${blocks.length * 100}%`, // ブロック数に応じてスクロール距離を設定
+      pin: true, // セクションをピン留め
+      scrub: 1, // スクロールに滑らかに追従（1秒の遅延）
+      anticipatePin: 1,
+      // markers: true, // デバッグ用（必要に応じてコメント解除）
+    }
+  });
+
+  // 各ブロックの切り替えアニメーションを追加
+  blocks.forEach((block, index) => {
+    if (index < blocks.length - 1) {
+      // 現在のブロックをフェードアウト
+      tl.to(block, {
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut"
+      }, index);
+
+      // 次のブロックをフェードイン
+      tl.fromTo(blocks[index + 1],
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 1,
+          ease: "power2.inOut"
+        },
+        index
+      );
+    }
+  });
+}
+
 // ページ読み込み時に実行
 window.addEventListener("DOMContentLoaded", function () {
   initScrollAnimations();
+  initScrollBlockTransitions(); // スクロールブロック切り替えアニメーションを追加
 });

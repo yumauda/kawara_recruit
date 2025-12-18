@@ -2023,6 +2023,73 @@ input::placeholder {
   letter-spacing: 0.06em;
 }
 
+.p-top-scroll__content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.p-top-scroll__block {
+  display: flex;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.p-top-scroll__img {
+  margin-left: calc(50% - 50vw);
+  padding-left: 1.25rem;
+  width: 50vw;
+}
+
+.p-top-scroll__img img {
+  aspect-ratio: 940/1040;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 0.625rem;
+}
+
+.p-top-scroll__detail {
+  flex: 1;
+}
+
+.p-top-scroll__title {
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-top-scroll__title {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-top-scroll__title {
+    font-size: 5rem;
+  }
+}
+
+.p-top-scroll__text {
+  margin-top: 3.75rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: #222;
+}
+@media screen and (min-width: 768px) {
+  .p-top-scroll__text {
+    margin-top: 2.5rem;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-top-scroll__text {
+    margin-top: 3.75rem;
+    font-size: 1.25rem;
+  }
+}
+
 .c-main-text {
   font-size: 0.8125rem;
   line-height: 1.6;
