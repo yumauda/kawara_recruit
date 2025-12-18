@@ -7,6 +7,227 @@
   <figure class="p-test__img">
     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/adult_img.webp" alt="金属の未来をリファイン" width="431" height="38">
   </figure>
+  <section class="p-middle-slider">
+    <div class="p-middle-slider__content">
+      <!-- Slider main container -->
+      <div class="swiper slider-middle">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <figure class="p-middle-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/top/top_slider1.webp" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-middle-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/top/top_slider1.webp" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-middle-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/top/top_slider1.webp" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-middle-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/top/top_slider1.webp" alt="">
+            </figure>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="p-recruit-info">
+    <div class="l-inner">
+      <div class="p-recruit-info__row">
+        <div class="p-recruit-info__top">
+          <p class="p-recruit-info__en">_Recruit Info</p>
+          <h3 class="p-recruit-info__title">募集要項</h3>
+        </div>
+        <ul class="p-recruit-info__tab-item" role="tablist">
+          <li class="p-recruit-info__tab-list" role="presentation">
+            <button type="button" id="tab1" class="p-recruit-info__tab-btn" role="tab" aria-controls="tabpanel1" aria-expanded="true" aria-selected="true" data-tabTitle="New recruitment application guidelines">
+              職種が入ります
+            </button>
+          </li>
+          <li class="p-recruit-info__tab-list" role="presentation">
+            <button type="button" id="tab2" class="p-recruit-info__tab-btn" role="tab" aria-controls="tabpanel2" aria-expanded="false" aria-selected="false" data-tabTitle="Mid-Career Recruitment Requirements">
+              職種が入ります
+            </button>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="p-recruit-info__content">
+        <div class="p-tab">
+          <div class="p-tab__area">
+
+            <div id="tabpanel1" class="p-tab__panel" role="tabpanel" aria-labelledby="tab1" aria-hidden="false" tabindex="0">
+
+              <table class="p-table__table p-table__table--possible">
+                <tr>
+                  <th class="p-table__item">業務内容</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">勤務地</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">勤務時間</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">休憩時間</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">休日休暇</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">給与条件</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">昇給</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">福利厚生</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">応募条件</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div id="tabpanel2" class="p-tab__panel" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+              <table class="p-table__table p-table__table--possible">
+                <tr>
+                  <th class="p-table__item">業務内容2</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">勤務地</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">勤務時間</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">休憩時間</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">休日休暇</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">給与条件</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">昇給</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">福利厚生</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-table__item">応募条件</th>
+                  <td class="p-table__body">
+                    <div class="p-table__select">
+                      <p class="p-table__top">内容が入ります。ダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section class="p-submit">
     <div class="p-submit__inner">
       <a href="#" class="p-submit__btn">

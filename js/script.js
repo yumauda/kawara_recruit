@@ -256,3 +256,28 @@ jQuery(".p-digital-modal__close").on("click", function (e) {
   jQuery(".p-digital-modal").removeClass("is-active");
   return false;
 });
+
+// 募集要項のタブ切り替え
+jQuery(document).ready(function ($) {
+  $(".p-recruit-info__tab-btn").on("click", function () {
+    const targetPanelId = $(this).attr("aria-controls");
+
+    // すべてのタブボタンの状態をリセット
+    $(".p-recruit-info__tab-btn").attr({
+      "aria-selected": "false",
+      "aria-expanded": "false"
+    });
+
+    // クリックされたタブボタンをアクティブに
+    $(this).attr({
+      "aria-selected": "true",
+      "aria-expanded": "true"
+    });
+
+    // すべてのタブパネルを非表示に
+    $(".p-tab__panel").attr("aria-hidden", "true");
+
+    // 対応するタブパネルを表示
+    $("#" + targetPanelId).attr("aria-hidden", "false");
+  });
+});

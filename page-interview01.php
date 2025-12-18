@@ -45,21 +45,21 @@
             <p class="p-page-content__text">インタビュー内容が入ります。ダミーテキスト<br>
               木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。<br>
               道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、蔦のかずらを頼みにしたような危い場処ではなくなって、徳川時代の末にはすでに渡ることのできる橋であった。</p>
-              <div class="p-page-content__img-row">
-                <figure class="p-page-content__row-img">
-                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg02.webp" alt="" width="440" height="300">
-                </figure>
-                <figure class="p-page-content__row-img">
-                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg03.webp" alt="" width="440" height="300">
-                </figure>
-              </div>
+            <div class="p-page-content__img-row">
+              <figure class="p-page-content__row-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg02.webp" alt="" width="440" height="300">
+              </figure>
+              <figure class="p-page-content__row-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg03.webp" alt="" width="440" height="300">
+              </figure>
+            </div>
           </div>
           <div class="p-page-content__block">
             <h3 class="p-page-content__title">タイトルが入ります。<br>ダミーテキストダミーテキスト</h3>
             <p class="p-page-content__text">インタビュー内容が入ります。ダミーテキスト<br>
               木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。<br>
               道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、蔦のかずらを頼みにしたような危い場処ではなくなって、徳川時代の末にはすでに渡ることのできる橋であった。</p>
-            
+
           </div>
           <div class="p-page-content__block">
             <h3 class="p-page-content__title">タイトルが入ります。<br>ダミーテキストダミーテキスト</h3>
@@ -71,6 +71,103 @@
             </figure>
           </div>
         </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="p-page-slider">
+    <!-- Slider main container -->
+    <div class="swiper slider-interview">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="#" class="p-page-slider__item">
+            <div class="p-page-slider__bg">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_bg.png" alt="">
+            </div>
+            <div class="p-page-slider__detail">
+              <p class="p-page-slider__detail-occupation">0000年入社<br>〇〇部 役職名</p>
+              <p class="p-page-slider__detail-name">柳光 雅英</p>
+
+            </div>
+            <figure class="p-page-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_img1.png" alt="">
+            </figure>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="p-page-slider__item">
+            <div class="p-page-slider__bg">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_bg.png" alt="">
+            </div>
+            <div class="p-page-slider__detail">
+              <p class="p-page-slider__detail-occupation">0000年入社<br>〇〇部 役職名</p>
+              <p class="p-page-slider__detail-name">柳光&emsp;雅英</p>
+
+            </div>
+            <figure class="p-page-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_img1.png" alt="">
+            </figure>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="p-page-slider__item">
+            <div class="p-page-slider__bg">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_bg.png" alt="">
+            </div>
+            <div class="p-page-slider__detail">
+              <p class="p-page-slider__detail-occupation">0000年入社<br>〇〇部 役職名</p>
+              <p class="p-page-slider__detail-name">柳光&emsp;雅英</p>
+            </div>
+            <figure class="p-page-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_img1.png" alt="">
+            </figure>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="p-page-slider__item">
+            <div class="p-page-slider__bg">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_bg.png" alt="">
+            </div>
+            <div class="p-page-slider__detail">
+              <p class="p-page-slider__detail-occupation">0000年入社<br>〇〇部 役職名</p>
+              <p class="p-page-slider__detail-name">柳光&emsp;雅英</p>
+            </div>
+            <figure class="p-page-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_img1.png" alt="">
+            </figure>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="p-page-slider__item">
+            <div class="p-page-slider__bg">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_bg.png" alt="">
+            </div>
+            <div class="p-page-slider__detail">
+              <p class="p-page-slider__detail-occupation">0000年入社<br>〇〇部 役職名</p>
+              <p class="p-page-slider__detail-name">柳光&emsp;雅英</p>
+            </div>
+            <figure class="p-page-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_img1.png" alt="">
+            </figure>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="p-page-slider__item">
+            <div class="p-page-slider__bg">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_bg.png" alt="">
+            </div>
+            <div class="p-page-slider__detail">
+              <p class="p-page-slider__detail-occupation">0000年入社<br>〇〇部 役職名</p>
+              <p class="p-page-slider__detail-name">柳光&emsp;雅英</p>
+            </div>
+            <figure class="p-page-slider__img">
+              <img src="<?php echo get_template_directory_uri() ?>/images/common/page_slider_img1.png" alt="">
+            </figure>
+          </a>
+        </div>
+
       </div>
 
     </div>

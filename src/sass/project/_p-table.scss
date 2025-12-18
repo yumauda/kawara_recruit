@@ -1,0 +1,46 @@
+@use "../global" as *;
+
+.p-table__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: rem(4);   
+}
+
+.p-table__table--possible {
+}
+.p-table__item {
+  width: 24%;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-size: rem(14);
+  padding: rem(14);
+  border-radius: rem(4);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-table__body {
+  padding: rem(14) rem(20);
+  background: #fff;
+  border-radius: rem(4);
+}
+.p-table__table tr:nth-child(2n) .p-table__body {
+  background: #ebebeb;
+}
+
+.p-table__select {
+}
+
+.p-table__top {
+  font-size: rem(20);
+  font-weight: 500;
+  color: #222;
+  line-height: calc(28 / 20);
+  letter-spacing: 0.06em;
+}
