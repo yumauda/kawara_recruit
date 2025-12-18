@@ -1,0 +1,65 @@
+@use "../global" as *;
+
+.p-page-mv {
+}
+
+.p-page-mv__inner {
+  padding-left: rem(40);
+  padding-right: rem(40);
+}
+
+.p-page-mv__content {
+  position: relative;
+}
+
+.p-page-mv__img {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+.p-page-mv__img img {
+  aspect-ratio: 1920 / 1080;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-page-mv__detail {
+  position: absolute;
+  left: rem(40);
+  bottom: rem(70);
+}
+
+.p-page-mv__title {
+  font-weight: 900;
+  color: #37af32;
+  line-height: calc(164 / 160);
+  letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: rem(100);
+  }
+  @include mq(lg) {
+    font-size: rem(160);
+  }
+}
+
+.p-page-mv__detail-row {
+  display: flex;
+  align-items: flex-end;
+  gap: rem(40);
+  margin-top: rem(40);
+}
+
+.p-page-mv__detail-occupation {
+  font-size: rem(16);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+.p-page-mv__detail-name {
+  color: #fff;
+  font-size: rem(30);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}

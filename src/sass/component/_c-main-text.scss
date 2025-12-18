@@ -1,0 +1,14 @@
+@use "../global" as *;
+
+.c-main-text {
+  font-size: rem(13);
+  line-height: 1.6;
+  color: $black;
+  @include mq(md) {
+    line-height: 1.75;
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(18);
+  }
+}
