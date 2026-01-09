@@ -132,50 +132,58 @@
 .p-form input[type="tel"],
 .p-form input[type="email"] {
   width: 100%;
-  border: 1px solid #909090;
   font-size: rem(14);
   line-height: 1.2;
   padding: rem(10) rem(12);
-  background: #f2f2f2;
+  background: #fff;
   @include mq(md) {
-    font-size: rem(17);
+    font-size: clamp(14px, 2vw, 14px);
     padding-top: rem(13);
     padding-bottom: rem(13);
     padding-left: rem(24);
     padding-right: rem(24);
   }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
 }
 .p-form textarea {
-  border: 1px solid #f2f2f2;
   width: 100%;
   height: rem(200);
-  font-size: rem(17);
   padding: rem(10) rem(12);
   resize: none;
-  background: #f2f2f2;
+  background: #fff;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
 }
 .p-form__btn-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: rem(40);
   gap: rem(15);
+  margin-top: rem(32);
   @include mq(md) {
+    margin-top: rem(40);
     gap: rem(10);
     flex-direction: row;
+  }
+  @include mq(lg) {
+    margin-top: rem(80);
   }
 
   input[type="submit"],
   button[type="submit"] {
-    width: rem(240);
-    height: rem(50);
+    width: rem(260);
+    height: rem(80);
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
-    border: 1px solid #e77492;
     border-radius: 9999px;
-    background: transparent;
     color: #e77492;
     font-size: rem(16);
     font-weight: 400;
@@ -183,7 +191,6 @@
     transition: all 0.3s ease;
 
     &:hover {
-      background: #e77492;
       color: #fff;
     }
   }
@@ -194,24 +201,12 @@
 .p-form input[type="submit"],
 .p-form button[type="submit"],
 .p-form input[type="button"] {
-  width: rem(240);
-  height: rem(50);
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
-  border: 1px solid #e77492 !important;
   border-radius: 9999px !important;
-  background: transparent !important;
-  color: #e77492 !important;
-  font-size: rem(16) !important;
-  font-weight: 400 !important;
   cursor: pointer;
   transition: all 0.3s ease;
-
-  @include mq(md) {
-    margin-top: rem(40);
-  }
 
   &:hover {
     background: #e77492 !important;
@@ -222,7 +217,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   transition: 0.3s ease-in-out;
   @include mq(md) {
     justify-content: flex-end;
@@ -280,7 +274,6 @@
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
   color: #fff;
 }
 .p-form__btn input[type="submit"]:hover,
@@ -318,7 +311,8 @@ input::placeholder {
 // テーブルベースのフォーム
 .p-form__table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: rem(5);
   margin-top: rem(40);
 
   tbody {
@@ -333,17 +327,16 @@ input::placeholder {
 }
 
 .p-form__label {
-  background: #fcecf0;
-  font-size: rem(16);
+  background: #222222;
+  font-size: rem(14);
   font-weight: 700;
-  color: #000;
+  color: #fff;
   text-align: left;
   position: relative;
   width: 100%;
   display: block;
   padding: rem(12);
-  border-top: 1px solid #ee819d;
-  border-bottom: 1px solid #ee819d;
+  border-radius: rem(5);
   @include mq(md) {
     vertical-align: middle;
     width: 24%;
@@ -402,6 +395,7 @@ input::placeholder {
   flex: 1;
   display: block;
   padding: rem(12);
+  border-radius: rem(5);
   @include mq(md) {
     padding: rem(20);
     display: table-cell;
@@ -414,10 +408,15 @@ input::placeholder {
   input[type="email"],
   input[type="date"] {
     width: 100%;
-    background: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    font-size: rem(17);
+    background: #fff;
+    font-size: rem(14);
     padding: rem(12) rem(15);
+    @include mq(md) {
+      font-size: clamp(14px, 2vw, 14px);
+    }
+    @include mq(lg) {
+      font-size: rem(20);
+    }
 
     &::placeholder {
       color: #999;
@@ -535,13 +534,57 @@ input::placeholder {
   color: #cc0000;
   font-weight: 700;
 }
-.p-thanks__btn-wrapper {
-  margin-top: rem(40);
+
+.p-price__btn {
+  background: #37af32 !important;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: rem(200);
+  height: rem(56);
+  @include mq(md) {
+    width: rem(220);
+    height: rem(64);
+    padding-left: rem(30);
+    padding-right: rem(20);
+  }
+  @include mq(lg) {
+    width: rem(260);
+    height: rem(80);
+    padding-left: rem(40);
+    padding-right: rem(30);
+  }
+}
+.p-price__btn-text {
+  color: #222;
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-family: $second-font-family;
+  font-style: italic;
 
   @include mq(md) {
-    margin-top: rem(52);
+    font-size: clamp(14px, 2vw, 14px);
   }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+.p-price__btn-icon {
+  width: rem(20);
+  height: rem(20);
+  position: relative;
+  border: 1px solid #222;
+  border-radius: 9999px;
+}
+.p-price__btn-icon::before {
+  position: absolute;
+  content: "";
+  background: #222;
+  width: rem(8);
+  height: rem(8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
 }

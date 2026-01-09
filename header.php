@@ -43,8 +43,61 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="l-header p-header">
-        <div class="l-inner">
-            header.php
+    <header class="p-header">
+        <div class="p-header__inner">
+            <div class="p-header__content">
+                <h1 class="p-header__logo">
+                    <a class="p-header__logo-link" href="<?php echo esc_url(home_url('/')); ?>">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/header_logo.png" alt="瓦百景" width="160" height="90">
+                    </a>
+                </h1>
+                <nav class="p-header__nav">
+                    <ul class="p-header__nav-lists">
+                        <li class="p-header__nav-list">
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__nav-link">コンセプト</a>
+                        </li>
+                        <li class="p-header__nav-list">
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__nav-link">職人の矜持</a>
+                        </li>
+                        <li class="p-header__nav-list">
+                            <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-header__nav-link">募集要項</a>
+                        </li>
+                        <li class="p-header__nav-list">
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-header__nav-link">エントリー</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="p-header__navigation">
+                    <button class="p-header__drawer p-drawer-icon">
+                        <span class="p-drawer-icon__bars">
+                            <span class="p-drawer-icon__bar1"></span>
+                            <span class="p-drawer-icon__bar2"></span>
+                            <span class="p-drawer-icon__bar3"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="p-header__drawer-content p-drawer-content">
+                    <div class="p-drawer-content__items">
+                        <ul class="p-drawer-content__lists">
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
