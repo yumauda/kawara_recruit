@@ -31,11 +31,15 @@
 
 .p-page-slider__detail {
   width: 100%;
-  padding-left: rem(30);
+  white-space: nowrap;
+  padding-left: rem(20);
+  @include mq(md) {
+    padding-left: rem(30);
+  }
 }
 
 .p-page-slider__detail-occupation {
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 900;
   letter-spacing: 0.06em;
   color: #fff;
@@ -53,6 +57,7 @@
   color: #fff;
   line-height: calc(100 / 30);
   margin-top: rem(10);
+  font-size: rem(14);
   @include mq(md) {
     font-size: clamp(16px, 2vw, 16px);
   }

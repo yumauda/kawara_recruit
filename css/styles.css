@@ -410,21 +410,33 @@ select::-ms-expand {
 }
 
 .p-footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
-.p-footer__content {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .p-footer__content {
+    display: flex;
+  }
 }
 
 .p-footer__home {
   display: inline-block;
+  width: 12.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .p-footer__home {
     width: 15.625rem;
+    margin-left: initial;
+    margin-right: initial;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -441,10 +453,13 @@ select::-ms-expand {
 }
 
 .p-footer__nav {
-  display: flex;
+  margin-top: 2rem;
 }
 @media screen and (min-width: 768px) {
   .p-footer__nav {
+    margin-top: initial;
+    display: flex;
+    margin-left: auto;
     gap: 2.5rem;
   }
 }
@@ -454,9 +469,27 @@ select::-ms-expand {
   }
 }
 
-.p-footer__list + .p-footer__list {
-  margin-top: 0.75rem;
+.p-footer__lists {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) {
+  .p-footer__lists {
+    display: initial;
+  }
+}
+
+.p-footer__lists + .p-footer__lists {
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__lists + .p-footer__lists {
+    margin-top: initial;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .p-footer__list + .p-footer__list {
     margin-top: 0.75rem;
@@ -469,12 +502,22 @@ select::-ms-expand {
 }
 
 .p-footer__link {
-  font-size: 1rem;
   color: #222;
   font-weight: 700;
   padding-left: 0.8125rem;
   position: relative;
   transition: 0.3s ease-in-out;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__link {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-footer__link {
+    font-size: 1rem;
+  }
 }
 
 .p-footer__link:hover {
@@ -520,8 +563,14 @@ select::-ms-expand {
 }
 
 .p-footer__small {
-  margin-top: 3.1875rem;
-  text-align: right;
+  text-align: center;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__small {
+    margin-top: 3.1875rem;
+    text-align: right;
+  }
 }
 
 .p-footer__small small {
@@ -530,6 +579,39 @@ select::-ms-expand {
   font-weight: 500;
   font-style: italic;
   color: #222222;
+}
+
+.p-footer__recruit-wrapper {
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__recruit-wrapper {
+    margin-top: initial;
+  }
+}
+
+.p-footer__recruit {
+  display: block;
+  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.2));
+}
+@media screen and (min-width: 768px) {
+  .p-footer__recruit {
+    margin-left: 2rem;
+    width: 12.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-footer__recruit {
+    margin-left: 3.125rem;
+    width: 20.625rem;
+  }
+}
+
+.p-footer__recruit img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .p-form {
@@ -1556,11 +1638,9 @@ input::placeholder {
   }
 }
 
-.p-page-content__content {
-  display: flex;
-}
 @media screen and (min-width: 768px) {
   .p-page-content__content {
+    display: flex;
     gap: 7.5rem;
   }
 }
@@ -1571,12 +1651,18 @@ input::placeholder {
 }
 
 .p-page-content__left {
-  max-width: 21.875rem;
-  width: 100%;
-  margin-top: 4rem;
-  position: sticky;
-  top: 4rem;
-  height: 100%;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-page-content__left {
+    margin-top: initial;
+    max-width: 21.875rem;
+    width: 100%;
+    margin-top: 4rem;
+    position: sticky;
+    top: 4rem;
+    height: 100%;
+  }
 }
 
 .p-page-content__img img {
@@ -1587,6 +1673,9 @@ input::placeholder {
   border-radius: 0.625rem;
 }
 
+.p-page-content__name-wrapper {
+  margin-top: 1rem;
+}
 @media screen and (min-width: 768px) {
   .p-page-content__name-wrapper {
     margin-top: 1.25rem;
@@ -1602,6 +1691,7 @@ input::placeholder {
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #222;
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   .p-page-content__name-ja {
@@ -1620,6 +1710,7 @@ input::placeholder {
   color: #222;
   font-weight: 700;
   letter-spacing: 0.06em;
+  font-size: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-page-content__name-en {
@@ -1632,6 +1723,8 @@ input::placeholder {
   font-weight: 500;
   line-height: 1.875;
   color: #222;
+  font-size: 0.875rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-page-content__profile-text {
@@ -1647,9 +1740,18 @@ input::placeholder {
 }
 
 .p-page-content__right {
-  flex: 1;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-page-content__right {
+    flex: 1;
+    margin-top: initial;
+  }
 }
 
+.p-page-content__block + .p-page-content__block {
+  margin-top: 2rem;
+}
 @media screen and (min-width: 768px) {
   .p-page-content__block + .p-page-content__block {
     margin-top: 5rem;
@@ -1666,6 +1768,7 @@ input::placeholder {
   letter-spacing: 0.2em;
   color: #222;
   line-height: 1.4;
+  font-size: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-page-content__title {
@@ -1683,6 +1786,8 @@ input::placeholder {
   font-weight: 500;
   line-height: 1.6;
   color: #222;
+  font-size: 0.875rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-page-content__text {
@@ -1697,6 +1802,9 @@ input::placeholder {
   }
 }
 
+.p-page-content__main-img {
+  margin-top: 1.25rem;
+}
 @media screen and (min-width: 768px) {
   .p-page-content__main-img {
     margin-top: 2.5rem;
@@ -1719,11 +1827,14 @@ input::placeholder {
 
 .p-page-content__img-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-page-content__img-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
     margin-top: 2.5rem;
   }
 }
@@ -1835,11 +1946,17 @@ input::placeholder {
 
 .p-page-slider__detail {
   width: 100%;
-  padding-left: 1.875rem;
+  white-space: nowrap;
+  padding-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-page-slider__detail {
+    padding-left: 1.875rem;
+  }
 }
 
 .p-page-slider__detail-occupation {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 900;
   letter-spacing: 0.06em;
   color: #fff;
@@ -1862,6 +1979,7 @@ input::placeholder {
   color: #fff;
   line-height: 3.3333333333;
   margin-top: 0.625rem;
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   .p-page-slider__detail-name {
@@ -2317,8 +2435,14 @@ input::placeholder {
 /* カラム系 */
 /* ギャラリー */
 .p-submit {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .p-submit__btn {
@@ -2328,17 +2452,28 @@ input::placeholder {
   background-size: cover;
   display: block;
   border-radius: 0.625rem;
-  padding: 2.75rem 3.75rem;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__btn {
+    padding: 2.75rem 3.75rem;
+  }
 }
 
-.p-submit__row {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .p-submit__row {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .p-submit__btn-top {
   position: relative;
-  width: fit-content;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__btn-top {
+    width: fit-content;
+  }
 }
 
 .p-submit__title {
@@ -2348,6 +2483,7 @@ input::placeholder {
   color: #37af32;
   line-height: 1.1428571429;
   text-transform: uppercase;
+  font-size: 1.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__title {
@@ -2366,10 +2502,13 @@ input::placeholder {
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: 0.06em;
-  position: absolute;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__subtitle {
+    margin-top: initial;
+    position: absolute;
     font-size: 1.75rem;
     right: -4.5rem;
     bottom: 0.75rem;
@@ -2384,10 +2523,11 @@ input::placeholder {
 }
 
 .p-submit__en-wrapper {
-  width: 11.25rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__en-wrapper {
+    width: 11.25rem;
     margin-top: 0.75rem;
   }
 }
@@ -2402,24 +2542,45 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 1rem;
   letter-spacing: 0.06em;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__en-main {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-submit__en-main {
+    font-size: 1rem;
+  }
 }
 
 .p-submit__en-sub {
-  margin-top: 1.125rem;
   color: #fff;
   font-size: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.75;
   letter-spacing: 0.06em;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__en-sub {
+    margin-top: 1.125rem;
+  }
 }
 
 .p-submit__btn-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-submit__btn-bottom {
+    gap: initial;
+  }
 }
 
 .p-submit__btn-bottom-text {
@@ -2427,9 +2588,12 @@ input::placeholder {
   font-weight: 500;
   line-height: 1.8;
   letter-spacing: 0.06em;
+  font-size: 0.875rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-submit__btn-bottom-text {
+    margin-top: initial;
     font-size: clamp(12px, 2vw, 16px);
   }
 }
@@ -2439,14 +2603,25 @@ input::placeholder {
   }
 }
 
+.p-submit__icon {
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 768px) {
   .p-submit__icon {
-    width: 6.25rem;
+    min-width: 6.25rem;
+    max-width: 6.25rem;
+    margin-top: initial;
+    margin-left: initial;
+    margin-right: initial;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-submit__icon {
-    width: 13.75rem;
+    min-width: 13.75rem;
+    max-width: 13.75rem;
   }
 }
 

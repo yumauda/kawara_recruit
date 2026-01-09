@@ -8,11 +8,20 @@ const slider2 = new Swiper(".slider-middle", {
   spaceBetween: 20,
 });
 const sliderInterview = new Swiper(".slider-interview", {
-  slidesPerView: 4.7,
+  slidesPerView: 1.4,
   centeredSlides: true,
   loop: true,
   initialSlide: 0,
-  spaceBetween: 40,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 4.7,
+      centeredSlides: true,
+      loop: true,
+      initialSlide: 0,
+      spaceBetween: 40,
+    },
+  },
 });
 const slider3 = new Swiper(".slider3", {
   slidesPerView: 1.2,

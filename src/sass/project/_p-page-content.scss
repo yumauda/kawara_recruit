@@ -28,8 +28,8 @@
 }
 
 .p-page-content__content {
-  display: flex;
   @include mq(md) {
+    display: flex;
     gap: rem(120);
   }
   @include mq(lg) {
@@ -38,12 +38,16 @@
 }
 
 .p-page-content__left {
-  max-width: rem(350);
-  width: 100%;
-  margin-top: rem(64);
-  position: sticky;
-  top: rem(64);
-  height: 100%;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: initial;
+    max-width: rem(350);
+    width: 100%;
+    margin-top: rem(64);
+    position: sticky;
+    top: rem(64);
+    height: 100%;
+  }
 }
 
 .p-page-content__img {
@@ -57,6 +61,7 @@
 }
 
 .p-page-content__name-wrapper {
+  margin-top: rem(16);
   @include mq(md) {
     margin-top: rem(20);
   }
@@ -69,6 +74,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #222;
+  font-size: rem(14);
   @include mq(md) {
     font-size: clamp(16px, 2vw, 16px);
   }
@@ -83,7 +89,7 @@
   color: #222;
   font-weight: 700;
   letter-spacing: 0.06em;
-
+  font-size: rem(12);
   @include mq(md) {
     font-size: clamp(12px, 2vw, 14px);
   }
@@ -94,6 +100,8 @@
   font-weight: 500;
   line-height: calc(30 / 16);
   color: #222;
+  font-size: rem(14);
+  margin-top: rem(16);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
     margin-top: rem(20);
@@ -105,12 +113,17 @@
 }
 
 .p-page-content__right {
-  flex: 1;
+  margin-top: rem(40);
+  @include mq(md) {
+    flex: 1;
+    margin-top: initial;
+  }
 }
 
 .p-page-content__block {
 }
 .p-page-content__block + .p-page-content__block {
+  margin-top: rem(32);
   @include mq(md) {
     margin-top: rem(80);
   }
@@ -124,6 +137,7 @@
   letter-spacing: 0.2em;
   color: #222;
   line-height: calc(56 / 40);
+  font-size: rem(20);
   @include mq(md) {
     font-size: clamp(20px, 2vw, 24px);
   }
@@ -137,6 +151,8 @@
   font-weight: 500;
   line-height: calc(32 / 20);
   color: #222;
+  font-size: rem(14);
+  margin-top: rem(16);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 16px);
     margin-top: rem(20);
@@ -148,6 +164,7 @@
 }
 
 .p-page-content__main-img {
+  margin-top: rem(20);
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -166,9 +183,12 @@
 }
 .p-page-content__img-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(20);
+  grid-template-columns: 1fr;
+  gap: rem(16);
+  margin-top: rem(20);
   @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
     margin-top: rem(40);
   }
   @include mq(lg) {
