@@ -14,29 +14,41 @@
   letter-spacing: 0.1em;
   @include mq(md) {
     letter-spacing: 0.15em;
+    font-size: clamp(18px, 2vw, 20px);
+  }
+  @include mq(lg){
     font-size: rem(28);
   }
 }
 .c-main-title__ja--child {
   font-family: $base-font-family;
-  font-size: rem(18);
+  font-size: rem(16);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+  @include mq(lg){
     font-size: rem(28);
   }
 }
 .c-main-title__ja--child span {
   display: none;
   @include mq(md) {
-    font-size: rem(22);
+    font-size: clamp(14px, 2vw, 18px);
     display: block;
+  }
+  @include mq(lg){
+    font-size: rem(22);
   }
 }
 .c-main-title__ja--small {
   font-size: rem(14);
   letter-spacing: 0.1em;
   @include mq(md) {
-    font-size: rem(20);
+    font-size: clamp(14px, 2vw, 20px);
     letter-spacing: 0.15em;
+  }
+  @include mq(lg){
+    font-size: rem(20);
   }
 }
 .c-main-title__en {
@@ -50,7 +62,10 @@
   font-weight: 600;
   @include mq(md) {
     margin-top: rem(14);
-    font-size: rem(16);
+    font-size: clamp(14px, 2vw, 14px);
     letter-spacing: 0.2em;
+  }
+  @include mq(lg){
+    font-size: rem(16);
   }
 }

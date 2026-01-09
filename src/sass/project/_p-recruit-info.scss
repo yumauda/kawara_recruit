@@ -7,7 +7,12 @@
   z-index: 1;
 }
 .p-recruit-info__content {
-  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+  @include mq(lg) {
+    margin-top: rem(80);
+  }
 }
 .p-recruit-info__row {
   display: flex;
@@ -16,15 +21,27 @@
 }
 .p-recruit-info__en {
   color: rgba($color: #fff, $alpha: 0.8);
-  font-size: rem(50);
+  font-size: rem(24);
   font-family: $second-font-family;
   font-weight: 700;
   font-style: italic;
+  @include mq(md) {
+    font-size: clamp(24px, 2vw, 32px);
+  }
+  @include mq(lg) {
+    font-size: rem(50);
+  }
 }
 .p-recruit-info__title {
-  font-size: rem(100);
+  font-size: rem(32);
   font-weight: 700;
   color: #37af32;
+  @include mq(md) {
+    font-size: clamp(40px, 2vw, 50px);
+  }
+  @include mq(lg) {
+    font-size: rem(100);
+  }
 }
 .p-recruit-info__tab-item {
   display: flex;
@@ -35,18 +52,26 @@
 }
 
 .p-recruit-info__tab-btn {
-  width: rem(300);
   text-align: center;
-  font-size: rem(20);
   font-weight: 700;
   color: #222;
   letter-spacing: 0.06em;
-  padding: rem(14);
   border-radius: rem(4);
   background: transparent;
   border: 1px solid #222;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  width: rem(200);
+  @include mq(md) {
+    padding: rem(8);
+    font-size: clamp(14px, 2vw, 14px);
+    width: rem(240);
+  }
+  @include mq(lg) {
+    padding: rem(14);
+    width: rem(300);
+    font-size: rem(20);
+  }
 }
 
 .p-recruit-info__tab-btn:hover {

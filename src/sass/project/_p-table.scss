@@ -38,9 +38,15 @@
 }
 
 .p-table__top {
-  font-size: rem(20);
+  font-size: rem(14);
   font-weight: 500;
   color: #222;
   line-height: calc(28 / 20);
   letter-spacing: 0.06em;
+  @include mq(md){
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg){
+    font-size: rem(20);
+  }
 }

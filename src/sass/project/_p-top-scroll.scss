@@ -1,6 +1,17 @@
 @use "../global" as *;
 
 .p-top-scroll {
+  position: relative;
+  z-index: 3;
+}
+.p-top-scroll::before {
+  position: absolute;
+  background: url(../images/common/bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  inset: 0;
+  z-index: 2;
 }
 
 .p-top-scroll__inner {
@@ -53,8 +64,8 @@
 }
 
 .p-top-scroll__text {
-  margin-top: rem(60);
-  font-size: rem(20);
+  margin-top: rem(20);
+  font-size: rem(14);
   font-weight: 500;
   line-height: calc(32 / 20);
   letter-spacing: 0.06em;
