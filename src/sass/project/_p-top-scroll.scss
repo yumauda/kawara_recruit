@@ -4,15 +4,6 @@
   position: relative;
   z-index: 3;
 }
-.p-top-scroll::before {
-  position: absolute;
-  background: url(../images/common/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  inset: 0;
-  z-index: 2;
-}
 
 .p-top-scroll__inner {
 }
@@ -23,10 +14,14 @@
 }
 
 .p-top-scroll__block {
+  padding-top: rem(20);
+  padding-bottom: rem(20);
   @include mq(md) {
     display: flex;
     align-items: center;
     gap: rem(60);
+    padding-top: rem(40);
+    padding-bottom: rem(40);
   }
   @include mq(lg) {
     gap: rem(120);

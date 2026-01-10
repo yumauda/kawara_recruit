@@ -1,51 +1,52 @@
 <?php get_header(); ?>
-<main>
-  <section class="p-mv">
-    <div class="p-mv__inner">
-      <div class="p-mv__content">
-        <figure class="p-mv__img js-blur">
-          <img src="<?php echo get_template_directory_uri() ?>/images/top/mv.webp" alt="伝統は手の中にある" width="1920" height="1080">
-        </figure>
-        <div class="p-mv__detail">
-          <h2 class="p-mv__title">
-            <img src="<?php echo get_template_directory_uri() ?>/images/top/mv_title.png" alt="伝統は手の中にある" width="840" height="314">
-          </h2>
-        </div>
-        <div class="p-mv__btn-wrapper">
-          <a href="#" class="p-mv__btn">
-            <p class="p-mv__btn-text">entry</p>
-            <div class="p-mv__icon"></div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="p-top-next">
-    <div class="l-inner">
-      <div class="p-top-next__content">
-        <h3 class="p-top-next__title">伝統を継ぎ、<br>未来を築く。</h3>
-        <figure class="p-top-next__img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/next_img.png" alt="伝統を継ぎ、未来を築く。" width="330" height="300">
-        </figure>
-        <div class="p-top-next__text-wrapper">
-          <p class="p-top-next__text">土を練り、火を操る。<br>
-            400年も昔、江戸の時代から変わらぬその姿勢。<br>
-            島根が誇る石州瓦は、<br class="u-desktop">
-            文化を築く者たちの手によって脈々と受け継がれてきた。</p>
 
-          <p class="p-top-next__text">伝統は守られるものではない。<br>
-            造り続けることでしか繋がらない。<br>
-            一枚一枚に宿る誇りと伝統。<br>
-            それはただのものづくりではなく、地域文化そのもの。
-          </p>
-          <p class="p-top-next__text">
-            暮らしを守り、地域を支え、文化を形にする。<br>
-            静かに続いてきた400年を、今こそ、次の世代へ。
-          </p>
-        </div>
+<section class="p-mv">
+  <div class="p-mv__inner">
+    <div class="p-mv__content">
+      <figure class="p-mv__img js-blur">
+        <img src="<?php echo get_template_directory_uri() ?>/images/top/mv.webp" alt="伝統は手の中にある" width="1920" height="1080">
+      </figure>
+      <div class="p-mv__detail">
+        <h2 class="p-mv__title">
+          <img src="<?php echo get_template_directory_uri() ?>/images/top/mv_title.png" alt="伝統は手の中にある" width="840" height="314">
+        </h2>
+      </div>
+      <div class="p-mv__btn-wrapper">
+        <a href="#" class="p-mv__btn">
+          <p class="p-mv__btn-text">entry</p>
+          <div class="p-mv__icon"></div>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<section class="p-top-next">
+  <div class="l-inner">
+    <div class="p-top-next__content">
+      <h3 class="p-top-next__title">伝統を継ぎ、<br>未来を築く。</h3>
+      <figure class="p-top-next__img">
+        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/next_img.png" alt="伝統を継ぎ、未来を築く。" width="330" height="300">
+      </figure>
+      <div class="p-top-next__text-wrapper">
+        <p class="p-top-next__text">土を練り、火を操る。<br>
+          400年も昔、江戸の時代から変わらぬその姿勢。<br>
+          島根が誇る石州瓦は、<br class="u-desktop">
+          文化を築く者たちの手によって脈々と受け継がれてきた。</p>
+
+        <p class="p-top-next__text">伝統は守られるものではない。<br>
+          造り続けることでしか繋がらない。<br>
+          一枚一枚に宿る誇りと伝統。<br>
+          それはただのものづくりではなく、地域文化そのもの。
+        </p>
+        <p class="p-top-next__text">
+          暮らしを守り、地域を支え、文化を形にする。<br>
+          静かに続いてきた400年を、今こそ、次の世代へ。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="p-bg">
   <section class="p-top-scroll">
     <div class="l-inner">
       <div class="p-top-scroll__content">
@@ -117,14 +118,14 @@
               <img src="<?php echo get_template_directory_uri() ?>/images/top/top_slider1.webp" alt="">
             </figure>
           </div>
-
-
+  
+  
         </div>
-
+  
       </div>
     </div>
   </section>
-
+  
   <section class="p-recruit-info">
     <div class="l-inner">
       <div class="p-recruit-info__row">
@@ -145,14 +146,14 @@
           </li>
         </ul>
       </div>
-
-
+  
+  
       <div class="p-recruit-info__content">
         <div class="p-tab">
           <div class="p-tab__area">
-
+  
             <div id="tabpanel1" class="p-tab__panel" role="tabpanel" aria-labelledby="tab1" aria-hidden="false" tabindex="0">
-
+  
               <table class="p-table__table p-table__table--possible">
                 <tr>
                   <th class="p-table__item">業務内容</th>
@@ -306,11 +307,11 @@
             </div>
           </div>
         </div>
-
+  
       </div>
     </div>
   </section>
-
+  
   <section class="p-submit">
     <div class="p-submit__inner">
       <a href="#" class="p-submit__btn">
@@ -336,12 +337,13 @@
                 <path id="パス_42623" data-name="パス 42623" d="M189.089-2035.115l14.667,12.833-14.667,12.834" transform="translate(-189.089 2035.115)" fill="none" stroke="#222" stroke-width="5" />
               </g>
             </svg>
-
+  
           </div>
         </div>
-
+  
       </a>
     </div>
   </section>
-</main>
-<?php get_footer() ?>
+  
+  <?php get_footer() ?>
+</div>
