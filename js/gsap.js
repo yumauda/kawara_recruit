@@ -173,7 +173,7 @@ gsap.fromTo(
       trigger: ".js-blur",
       start: "top top",
       end: "bottom top",
-      scrub: 1.5,
+      scrub: 1,
     },
   }
 );

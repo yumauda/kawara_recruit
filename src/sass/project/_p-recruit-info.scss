@@ -2,11 +2,15 @@
 
 .p-recruit-info {
   padding-bottom: rem(60);
-  margin-top: rem(-36);
   position: relative;
   z-index: 1;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(-36);
+  }
 }
 .p-recruit-info__content {
+  margin-top: rem(32);
   @include mq(md) {
     margin-top: rem(60);
   }
@@ -15,9 +19,11 @@
   }
 }
 .p-recruit-info__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 .p-recruit-info__en {
   color: rgba($color: #fff, $alpha: 0.8);
@@ -45,7 +51,13 @@
 }
 .p-recruit-info__tab-item {
   display: flex;
+  flex-direction: column;
   gap: rem(5);
+  margin-top: rem(24);
+  @include mq(md) {
+    flex-direction: row;
+    margin-top: initial;
+  }
 }
 
 .p-recruit-info__tab-list {
