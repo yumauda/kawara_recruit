@@ -3495,6 +3495,12 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-top-next__content {
     display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-top-next__content {
+    justify-content: initial;
   }
 }
 
@@ -3504,10 +3510,11 @@ input::placeholder {
   line-height: 1.2222222222;
   letter-spacing: 0.06em;
   white-space: nowrap;
+  font-size: 1.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-top-next__title {
-    font-size: clamp(20px, 2vw, 36px);
+    font-size: clamp(48px, 2vw, 64px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3616,6 +3623,96 @@ input::placeholder {
 @media screen and (min-width: 1540px) {
   .p-top-scroll__block {
     gap: 7.5rem;
+  }
+}
+
+.p-top-scroll__block--1,
+.p-top-scroll__block--2,
+.p-top-scroll__block--3 {
+  position: relative;
+}
+
+.p-top-scroll__block--1::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/top_scroll_1_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 189/193;
+  object-fit: cover;
+  height: auto;
+  width: 5rem;
+  right: 0rem;
+  top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-scroll__block--1::before {
+    top: 2.5rem;
+    right: 0;
+    width: 8.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-top-scroll__block--1::before {
+    top: 6.75rem;
+    width: 11.8125rem;
+  }
+}
+
+.p-top-scroll__block--2::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/top_scroll_2_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 189/193;
+  object-fit: cover;
+  height: auto;
+  width: 5rem;
+  right: 0;
+  top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-scroll__block--2::before {
+    top: 2.5rem;
+    right: 0;
+    width: 8.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-top-scroll__block--2::before {
+    top: 6.75rem;
+    width: 11.8125rem;
+  }
+}
+
+.p-top-scroll__block--3::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/top_scroll_3_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 189/193;
+  object-fit: cover;
+  height: auto;
+  width: 5rem;
+  right: 0;
+  top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-scroll__block--3::before {
+    top: 2.5rem;
+    right: 0;
+    width: 8.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-top-scroll__block--3::before {
+    top: 6.75rem;
+    width: 11.8125rem;
   }
 }
 

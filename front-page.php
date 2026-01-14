@@ -50,7 +50,7 @@
   <section class="p-top-scroll">
     <div class="l-inner">
       <div class="p-top-scroll__content">
-        <div class="p-top-scroll__block">
+        <div class="p-top-scroll__block p-top-scroll__block--1">
           <figure class="p-top-scroll__img">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_scroll_img1.webp" alt="一枚の瓦に、400年を背負う歴史が宿る。" width="940" height="1040">
           </figure>
@@ -62,7 +62,7 @@
               その重みを背負うことが、私たち職人の誇りである。</p>
           </div>
         </div>
-        <div class="p-top-scroll__block">
+        <div class="p-top-scroll__block p-top-scroll__block--2">
           <figure class="p-top-scroll__img">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_scroll_img2.webp" alt="400年を背負う歴史が宿る。" width="940" height="1040">
           </figure>
@@ -75,7 +75,7 @@
               この技があるからこそ、地域の暮らしは守られてきた。</p>
           </div>
         </div>
-        <div class="p-top-scroll__block">
+        <div class="p-top-scroll__block p-top-scroll__block--3">
           <figure class="p-top-scroll__img">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/top_scroll_img3.webp" alt="揺るぎない誇りが宿る。" width="940" height="1040">
           </figure>

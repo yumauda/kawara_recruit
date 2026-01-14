@@ -18,6 +18,10 @@
 .p-top-next__content {
   @include mq(md) {
     display: flex;
+    justify-content: space-between;
+  }
+  @include mq(lg){
+    justify-content: initial;
   }
 }
 
@@ -27,8 +31,9 @@
   line-height: calc(110 / 90);
   letter-spacing: 0.06em;
   white-space: nowrap;
+  font-size: rem(28);
   @include mq(md) {
-    font-size: clamp(20px, 2vw, 36px);
+    font-size: clamp(48px, 2vw, 64px);
   }
   @include mq(lg) {
     font-size: rem(90);
