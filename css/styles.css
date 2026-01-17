@@ -2422,12 +2422,17 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-page-content__left {
     margin-top: initial;
-    max-width: 21.875rem;
     width: 100%;
-    margin-top: 4rem;
     position: sticky;
-    top: 4rem;
     height: 100%;
+    top: 2.5rem;
+    max-width: 15.625rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-page-content__left {
+    max-width: 21.875rem;
+    top: 4rem;
   }
 }
 

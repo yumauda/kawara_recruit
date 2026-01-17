@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 // アニメーションパターンを定義
 const animationPatterns = {
   // ページ読み込み時に即座に表示（ScrollTrigger無し）

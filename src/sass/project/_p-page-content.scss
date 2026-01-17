@@ -41,12 +41,15 @@
   margin-top: rem(40);
   @include mq(md) {
     margin-top: initial;
-    max-width: rem(350);
     width: 100%;
-    margin-top: rem(64);
     position: sticky;
-    top: rem(64);
     height: 100%;
+    top: rem(40);
+    max-width: rem(250);
+  }
+  @include mq(lg){
+    max-width: rem(350);
+    top: rem(64);
   }
 }
 
