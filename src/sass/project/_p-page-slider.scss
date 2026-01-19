@@ -1,19 +1,54 @@
 @use "../global" as *;
 
 .p-page-slider {
+  position: relative;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+
   @include mq(md) {
+    padding-top: rem(80);
     padding-bottom: rem(100);
   }
+
   @include mq(lg) {
+    padding-top: rem(150);
     padding-bottom: rem(250);
   }
 }
+
+.p-page-slider::before {
+  position: absolute;
+  content: '';
+  background: url(../images/common/text.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  width: rem(400);
+  top: 0;
+  left: rem(-20);
+  aspect-ratio: 1986 / 349;
+  object-fit: cover;
+  z-index: -1;
+
+  @include mq(md) {
+    top: rem(-88);
+    width: rem(1500);
+  }
+
+  @include mq(lg) {
+    top: rem(-56);
+    width: rem(1986);
+  }
+}
+
 .p-page-slider__item {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .p-page-slider__bg {
   position: absolute;
   top: 0;
@@ -22,6 +57,7 @@
   height: 100%;
   z-index: -1;
 }
+
 .p-page-slider__bg img {
   width: 100%;
   height: auto;
@@ -33,6 +69,7 @@
   width: 100%;
   white-space: nowrap;
   padding-left: rem(20);
+
   @include mq(md) {
     padding-left: rem(30);
   }
@@ -44,13 +81,16 @@
   letter-spacing: 0.06em;
   color: #fff;
   line-height: calc(26 / 16);
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 16px);
   }
+
   @include mq(lg) {
     font-size: rem(16);
   }
 }
+
 .p-page-slider__detail-name {
   font-weight: 900;
   letter-spacing: 0.06em;
@@ -58,9 +98,11 @@
   line-height: calc(100 / 30);
   margin-top: rem(10);
   font-size: rem(14);
+
   @include mq(md) {
     font-size: clamp(16px, 2vw, 16px);
   }
+
   @include mq(lg) {
     font-size: rem(30);
   }
@@ -70,17 +112,32 @@
   @include mq(md) {
     width: rem(240);
   }
+
   @include mq(lg) {
     width: rem(360);
   }
 }
+
 .p-page-slider__img img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center center;
 }
+
 .slider-interview {
   padding-top: rem(60) !important;
   padding-bottom: rem(60) !important;
+}
+
+.slider-page-interview .swiper-slide {
+  width: rem(240);
+
+  @include mq(md) {
+    width: rem(300);
+  }
+
+  @include mq(lg) {
+    width: rem(360);
+  }
 }

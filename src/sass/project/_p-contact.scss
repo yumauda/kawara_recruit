@@ -2,9 +2,11 @@
 
 .p-contact {
   padding-bottom: rem(60);
+
   @include mq(md) {
     padding-bottom: rem(100);
   }
+
   @include mq(lg) {
     padding-bottom: rem(200);
   }
@@ -12,9 +14,11 @@
 
 .p-contact__privacy-lead {
   margin-top: rem(30);
+
   @include mq(md) {
     margin-top: rem(50);
   }
+
   @include mq(lg) {
     margin-top: rem(100);
   }
@@ -25,12 +29,13 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   line-height: calc(32 / 20);
-  text-align: center;
   font-size: rem(14);
 
   @include mq(md) {
+    text-align: center;
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
@@ -39,9 +44,15 @@
 .p-contact__privacy-box {
   background: #fff;
   margin-top: rem(24);
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+
   @include mq(md) {
+    padding-bottom: initial;
     margin-top: rem(32);
+    padding-top: initial;
   }
+
   @include mq(lg) {
     margin-top: rem(50);
   }
@@ -54,17 +65,37 @@
 
   @include mq(md) {
     flex-direction: row;
-    min-height: rem(160);
   }
 }
 
 .p-contact__privacy-box-left {
   padding-left: rem(20);
   padding-right: rem(20);
+
   @include mq(md) {
     padding-left: rem(40);
     padding-right: rem(40);
+    position: relative;
     flex: 1;
+    padding-top: rem(32);
+    padding-bottom: rem(32);
+  }
+
+  @include mq(md) {
+    padding-top: rem(49);
+    padding-bottom: rem(49);
+
+  }
+}
+.p-contact__privacy-box-left::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: #d6d4d5;
+    width: 1px;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 
@@ -74,9 +105,11 @@
   letter-spacing: 0.06em;
   line-height: calc(32 / 20);
   font-size: rem(14);
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(20);
   }
@@ -84,6 +117,7 @@
 
 .p-contact__privacy-link {
   color: inherit;
+  text-decoration: underline;
 }
 
 .p-contact__privacy-box-right {
@@ -93,24 +127,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: rem(16);
 
   @include mq(md) {
+    margin-top: initial;
     border-top: 0;
-    padding-left: rem(20);
+    padding-left: initial;
     padding-right: rem(20);
     flex: 0 0 rem(400);
   }
 }
-.p-contact__privacy-box-right::before {
-  @include mq(md) {
-    position: absolute;
-    content: "";
-    background: #d6d4d5;
-    width: 1px;
-    height: 100%;
-    left: 0;
-  }
-}
+
 
 .p-contact__privacy-agree {
   display: flex;
@@ -152,13 +179,12 @@
   flex-shrink: 0;
 }
 
-.p-contact__privacy-checkbox-input:checked + .p-contact__privacy-checkbox-box {
+.p-contact__privacy-checkbox-input:checked+.p-contact__privacy-checkbox-box {
   background: #37af32;
   border-color: #37af32;
 }
 
-.p-contact__privacy-checkbox-input:checked
-  + .p-contact__privacy-checkbox-box::after {
+.p-contact__privacy-checkbox-input:checked+.p-contact__privacy-checkbox-box::after {
   content: "✓";
   color: #fff;
   font-size: rem(18);
@@ -166,8 +192,7 @@
   font-weight: 700;
 }
 
-.p-contact__privacy-checkbox-input:focus-visible
-  + .p-contact__privacy-checkbox-box {
+.p-contact__privacy-checkbox-input:focus-visible+.p-contact__privacy-checkbox-box {
   outline: 2px solid rgba(55, 175, 50, 0.7);
   outline-offset: 2px;
 }
@@ -191,7 +216,7 @@
   height: rem(30);
   border-radius: rem(17);
   background: #37af32;
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
   letter-spacing: 0.06em;
   font-size: rem(14);

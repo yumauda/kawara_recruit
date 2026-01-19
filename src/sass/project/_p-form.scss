@@ -164,6 +164,7 @@
 .p-form__btn-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: rem(15);
   margin-top: rem(32);
@@ -174,25 +175,6 @@
   }
   @include mq(lg) {
     margin-top: rem(80);
-  }
-
-  input[type="submit"],
-  button[type="submit"] {
-    width: rem(260);
-    height: rem(80);
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-radius: 9999px;
-    color: #e77492;
-    font-size: rem(16);
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    &:hover {
-      color: #fff;
-    }
   }
 }
 
@@ -213,54 +195,7 @@
     color: #fff !important;
   }
 }
-.p-form__btn-outside {
-  position: relative;
-  display: flex;
-  align-items: center;
-  transition: 0.3s ease-in-out;
-  @include mq(md) {
-    justify-content: flex-end;
-    width: rem(240);
-  }
-}
-.p-form__btn-outside::before {
-  position: absolute;
-  content: "";
-  background: url(../images/common/btn_icon_white.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  top: 50%;
-  transform: translateY(-50%);
-  left: rem(6);
-  transition: 0.3s ease-in-out;
-  aspect-ratio: 12 / 24;
-  object-fit: cover;
-  height: auto;
-  z-index: 1;
-  @include mq(md) {
-    width: rem(24);
-  }
-}
-.p-form__btn-outside::after {
-  position: absolute;
-  content: "";
-  background: url(../images/common/btn_icon_white_right.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  top: 50%;
-  transform: translateY(-50%);
-  aspect-ratio: 12 / 24;
-  object-fit: cover;
-  height: auto;
-  right: rem(6);
-  transition: 0.3s ease-in-out;
-  z-index: 1;
-  @include mq(md) {
-    width: rem(24);
-  }
-}
+
 
 .p-form__btn input[type="submit"] {
   transition: 0.3s ease-in-out;
@@ -268,13 +203,24 @@
   position: relative;
   border: 1px solid #222;
   background: #222;
-  font-size: rem(18);
+  font-size: rem(14);
   width: rem(240);
   height: rem(60);
   text-align: center;
   display: flex;
   align-items: center;
   color: #fff;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  @include mq(md){
+    
+  }
+  @include mq(lg){
+    width: rem(260);
+    height: rem(80);
+    padding-left: rem(40);
+    padding-right: rem(30);
+  }
 }
 .p-form__btn input[type="submit"]:hover,
 .p-form__btn input[type="button"]:hover {
@@ -351,7 +297,9 @@ input::placeholder {
   }
 
   label {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 .p-form__label span {
@@ -366,6 +314,14 @@ input::placeholder {
     height: 1px;
     left: 0;
     top: -1px;
+  }
+}
+
+// `for="your-message"` の行だけ縦位置揃えを解除（md以上で table-cell の vertical-align を上書き）
+@include mq(md) {
+  .p-form__label:has(label[for="your-message"]) {
+    vertical-align: initial;
+    padding-top: rem(25);
   }
 }
 .p-form__row:last-child .p-form__label::after {
@@ -587,4 +543,7 @@ input::placeholder {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 9999px;
+}
+::placeholder {
+  color: rgba($color: #222222, $alpha: 0.2) !important;
 }

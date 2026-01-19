@@ -8,15 +8,45 @@ const slider2 = new Swiper(".slider-middle", {
   spaceBetween: 20,
 });
 const sliderInterview = new Swiper(".slider-interview", {
-  slidesPerView: 1.4,
+  slidesPerView: "auto",
+  centeredSlides: true,
+  loop: true,
+  initialSlide: 0,
+  spaceBetween: 60,
+
+  breakpoints: {
+    768: {
+      slidesPerView: "auto",
+      loop: true,
+      initialSlide: 0,
+      spaceBetween: 20,
+    },
+    1540: {
+      slidesPerView: "auto",
+      loop: true,
+      initialSlide: 0,
+      spaceBetween: 90,
+    },
+  },
+});
+const sliderPageInterview = new Swiper(".slider-page-interview", {
+  slidesPerView: "auto",
   centeredSlides: true,
   loop: true,
   initialSlide: 0,
   spaceBetween: 20,
+
   breakpoints: {
     768: {
-      slidesPerView: 4.7,
-      centeredSlides: true,
+      centeredSlides: false,
+      slidesPerView: "auto",
+      loop: true,
+      initialSlide: 0,
+      spaceBetween: 30,
+    },
+    1540: {
+      slidesPerView: "auto",
+      centeredSlides: false,
       loop: true,
       initialSlide: 0,
       spaceBetween: 40,
@@ -49,96 +79,6 @@ const slider3 = new Swiper(".slider3", {
   },
 });
 
-// ピックアップタブスライダー
-const sliderPickup = new Swiper(".slider-pickup", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="all"] .swiper-button-next',
-    prevEl: '[data-content="all"] .swiper-button-prev',
-  },
-});
-
-const sliderStay = new Swiper(".slider-stay", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="stay"] .swiper-button-next',
-    prevEl: '[data-content="stay"] .swiper-button-prev',
-  },
-});
-
-const sliderFood = new Swiper(".slider-food", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="food"] .swiper-button-next',
-    prevEl: '[data-content="food"] .swiper-button-prev',
-  },
-});
-
-const sliderRestaurant = new Swiper(".slider-restaurant", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="restaurant"] .swiper-button-next',
-    prevEl: '[data-content="restaurant"] .swiper-button-prev',
-  },
-});
-
-const sliderNews = new Swiper(".slider-news", {
-  slidesPerView: 1.1,
-  centeredSlides: true,
-  loop: true,
-  initialSlide: 0,
-  breakpoints: {
-    768: {
-      effect: "slide",
-      slidesPerView: 3,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '[data-content="news"] .swiper-button-next',
-    prevEl: '[data-content="news"] .swiper-button-prev',
-  },
-});
 
 const slider4 = new Swiper(".slider4", {
   slidesPerView: 1.1,

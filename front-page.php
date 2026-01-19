@@ -91,6 +91,79 @@
       </div>
     </div>
   </section>
+  <section class="p-top-interview">
+    <div class="l-inner">
+      <div class="p-top-interview__content">
+        <h3 class="p-top-interview__title">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/interview_title.png" alt="職人のプライド" width="457" height="174">
+        </h3>
+        <p class="p-top-interview__topText">静かに、しかし揺るぎなく。<br>
+          この地に生き、この技を継ぐ職人たちの声を伝える。</p>
+        <div class="p-top-interview__slider">
+          <div class="swiper slider-interview">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="<?php echo esc_url(home_url('/interview01/')); ?>" class="p-top-interview__link">
+                  <div class="p-top-interview__detail">
+                    <p class="p-top-interview__detail-title">瓦一枚に<br>込める誇り</p>
+                    <div class="p-top-interview__text-wrapper">
+                      <p class="p-top-interview__detail-text">_瓦を造るということは、</p>
+                      <p class="p-top-interview__detail-text">単なる生業ではない。</p>
+                    </div>
+                    <div class="p-top-interview__name-wrapper">
+                      <p class="p-top-interview__year">0000年入社 〇〇部 役職名</p>
+                      <p class="p-top-interview__name">佐藤 浩二</p>
+                    </div>
+                  </div>
+                  <figure class="p-top-interview__img">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview01.webp" alt="職人のプライド" width="457" height="174">
+                  </figure>
+
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="p-top-interview__link">
+                  <div class="p-top-interview__detail">
+                    <p class="p-top-interview__detail-title">文化を守り<br>技を継ぐ</p>
+                    <div class="p-top-interview__text-wrapper">
+                      <p class="p-top-interview__detail-text">_瓦を焼く。</p>
+                      <p class="p-top-interview__detail-text">それは遺産を築くこと。</p>
+                    </div>
+                    <div class="p-top-interview__name-wrapper">
+                      <p class="p-top-interview__year">0000年入社 〇〇部 役職名</p>
+                      <p class="p-top-interview__name">佐藤 浩二</p>
+                    </div>
+                  </div>
+                  <figure class="p-top-interview__img">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview02.webp" alt="職人のプライド" width="457" height="174">
+                  </figure>
+
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="p-top-interview__link">
+                  <div class="p-top-interview__detail">
+                    <p class="p-top-interview__detail-title">土と火に<br>生きる</p>
+                    <div class="p-top-interview__text-wrapper">
+                      <p class="p-top-interview__detail-text">_手が歴史を形づくる限り、</p>
+                      <p class="p-top-interview__detail-text">伝統は決して終わらない。</p>
+                    </div>
+                    <div class="p-top-interview__name-wrapper">
+                      <p class="p-top-interview__year">0000年入社 〇〇部 役職名</p>
+                      <p class="p-top-interview__name">佐藤 浩二</p>
+                    </div>
+                  </div>
+                  <figure class="p-top-interview__img">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview03.webp" alt="職人のプライド" width="457" height="174">
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="p-middle-slider">
     <div class="p-middle-slider__content">
       <!-- Slider main container -->
@@ -118,14 +191,14 @@
               <img src="<?php echo get_template_directory_uri() ?>/images/top/top_slider1.webp" alt="">
             </figure>
           </div>
-  
-  
+
+
         </div>
-  
+
       </div>
     </div>
   </section>
-  
+
   <section class="p-recruit-info">
     <div class="l-inner">
       <div class="p-recruit-info__row">
@@ -146,14 +219,14 @@
           </li>
         </ul>
       </div>
-  
-  
+
+
       <div class="p-recruit-info__content">
         <div class="p-tab">
           <div class="p-tab__area">
-  
+
             <div id="tabpanel1" class="p-tab__panel" role="tabpanel" aria-labelledby="tab1" aria-hidden="false" tabindex="0">
-  
+
               <table class="p-table__table p-table__table--possible">
                 <tr>
                   <th class="p-table__item">業務内容</th>
@@ -307,11 +380,11 @@
             </div>
           </div>
         </div>
-  
+
       </div>
     </div>
   </section>
-  
+
   <section class="p-submit">
     <div class="p-submit__inner">
       <a href="#" class="p-submit__btn">
@@ -337,13 +410,13 @@
                 <path id="パス_42623" data-name="パス 42623" d="M189.089-2035.115l14.667,12.833-14.667,12.834" transform="translate(-189.089 2035.115)" fill="none" stroke="#222" stroke-width="5" />
               </g>
             </svg>
-  
+
           </div>
         </div>
-  
+
       </a>
     </div>
   </section>
-  
+
   <?php get_footer() ?>
 </div>

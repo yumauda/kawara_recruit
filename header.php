@@ -80,20 +80,36 @@
                     <div class="p-drawer-content__items">
                         <ul class="p-drawer-content__lists">
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">TOP</span>
+                                    <span class="p-drawer-content__link-ja">トップ</span>
+                                </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">CONCEPT</span>
+                                    <span class="p-drawer-content__link-ja">コンセプト</span>
+                                </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">PRIDE</span>
+                                    <span class="p-drawer-content__link-ja">職人の矜持</span>
+                                </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                                <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">RECRUIT</span>
+                                    <span class="p-drawer-content__link-ja">募集要項</span>
+                                </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">ENTRY</span>
+                                    <span class="p-drawer-content__link-ja">エントリー</span>
+                                </a>
                             </li>
+                            
                         </ul>
 
                     </div>

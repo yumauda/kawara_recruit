@@ -1,0 +1,228 @@
+@use "../global" as *;
+
+.p-top-interview {
+  @include mq(md) {
+    padding-top: rem(120);
+  }
+
+  @include mq(lg) {
+    padding-top: rem(200);
+  }
+}
+
+.p-top-interview__content {
+  margin-top: rem(20);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.p-top-interview__title {
+  max-width: rem(200);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(md) {
+    max-width: rem(320);
+  }
+
+  @include mq(lg) {
+    max-width: rem(457);
+  }
+}
+
+.p-top-interview__title img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-top-interview__topText {
+  text-align: center;
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: calc(36 / 20);
+  letter-spacing: 0.06em;
+  color: #222;
+
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 16px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+
+.p-top-interview__slider {}
+
+.swiper {}
+
+.slider-interview {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.p-top-interview__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12);
+  position: relative;
+
+  @include mq(md) {
+    gap: rem(20);
+  }
+
+  @include mq(lg) {
+    gap: rem(32);
+  }
+}
+
+.p-top-interview__link::before {
+  position: absolute;
+  content: '';
+  background: url(../images/top/interview_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(280);
+  height: auto;
+  top: 48%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 660 / 600;
+  object-fit: cover;
+  z-index: -1;
+
+  @include mq(md) {
+    width: rem(440);
+  }
+
+  @include mq(lg) {
+    width: rem(660);
+  }
+}
+
+.p-top-interview__slider .swiper-slide {
+  width: rem(340);
+  @include mq(md) {
+    width: rem(600);
+  }
+
+  @include mq(lg) {
+    width: rem(725);
+  }
+}
+
+.p-top-interview__detail {}
+
+.p-top-interview__detail-title {
+  font-size: rem(20);
+  font-weight: 700;
+  color: #37AF32;
+  letter-spacing: 0.06em;
+
+  @include mq(md) {
+    font-size: clamp(32px, 2vw, 40px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(70);
+  }
+}
+
+.p-top-interview__text-wrapper {
+  margin-top: rem(10);
+}
+
+.p-top-interview__detail-text {
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: calc(36 / 24);
+  color: #fff;
+  white-space: nowrap;
+
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(24);
+  }
+}
+
+.p-top-interview__name-wrapper {
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+
+  @include mq(lg) {
+    margin-top: rem(50);
+    display: flex;
+    gap: rem(20);
+    align-items: flex-end;
+  }
+}
+
+.p-top-interview__year {
+  font-weight: 700;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: rem(12);
+
+  @include mq(md) {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+}
+
+.p-top-interview__name {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.06em;
+  font-size: rem(16);
+
+  @include mq(md) {
+    font-size: clamp(20px, 2vw, 20px);
+  }
+
+  @include mq(lg) {
+    font-size: rem(30);
+  }
+}
+
+.p-top-interview__img {
+  min-width: rem(100);
+  max-width: rem(100);
+
+  @include mq(md) {
+    min-width: rem(160);
+    max-width: rem(160);
+  }
+
+  @include mq(lg) {
+    min-width: rem(240);
+    max-width: rem(240);
+  }
+}
+
+.p-top-interview__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
