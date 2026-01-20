@@ -2,6 +2,7 @@
 
 .p-page-slider {
   position: relative;
+  overflow-x: clip;
   padding-top: rem(60);
   padding-bottom: rem(60);
 

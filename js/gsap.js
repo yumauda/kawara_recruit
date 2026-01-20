@@ -172,8 +172,8 @@ gsap.fromTo(
     duration: 1,
     ease: "power2.inOut",
     scrollTrigger: {
-      trigger: ".js-blur",
-      start: "top top",
+      trigger: ".p-mv__btn-wrapper",
+      start: "top 40%",
       end: "bottom top",
       scrub: 1,
     },

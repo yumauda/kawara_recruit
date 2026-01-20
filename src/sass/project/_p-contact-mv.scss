@@ -1,7 +1,6 @@
 @use "../global" as *;
 
-.p-contact-mv {
-}
+.p-contact-mv {}
 
 .p-contact-mv__content {
   position: relative;
@@ -11,19 +10,30 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+
 }
+
 .p-contact-mv__img img {
-  aspect-ratio: 1920 / 686;
   object-fit: cover;
   width: 100%;
   height: auto;
+  aspect-ratio: 375 / 375;
+
+  @include mq(md) {
+
+    aspect-ratio: 1920 / 686;
+  }
 }
 
 .p-contact-mv__detail {
   position: absolute;
-  left: rem(40);
   top: 50%;
   transform: translateY(-50%);
+
+  @include mq(md) {
+    left: rem(40);
+
+  }
 }
 
 .p-contact-mv__title {
@@ -37,9 +47,11 @@
   color: #fff;
   font-weight: 700;
   font-style: italic;
+
   @include mq(md) {
     font-size: clamp(20px, 2vw, 24px);
   }
+
   @include mq(lg) {
     font-size: rem(50);
   }
@@ -51,9 +63,11 @@
   font-size: rem(32);
   letter-spacing: 0.1em;
   line-height: calc(140 / 100);
+
   @include mq(md) {
     font-size: clamp(40px, 2vw, 50px);
   }
+
   @include mq(lg) {
     font-size: rem(100);
   }

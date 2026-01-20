@@ -3,23 +3,26 @@
 <section class="p-mv">
   <div class="p-mv__inner">
     <div class="p-mv__content">
-      <figure class="p-mv__img js-blur">
-        <img src="<?php echo get_template_directory_uri() ?>/images/top/mv.webp" alt="伝統は手の中にある" width="1920" height="1080">
-      </figure>
-      <div class="p-mv__detail">
-        <h2 class="p-mv__title">
-          <img src="<?php echo get_template_directory_uri() ?>/images/top/mv_title.png" alt="伝統は手の中にある" width="840" height="314">
-        </h2>
-      </div>
-      <div class="p-mv__btn-wrapper">
-        <a href="#" class="p-mv__btn">
-          <p class="p-mv__btn-text">entry</p>
-          <div class="p-mv__icon"></div>
-        </a>
+
+      <div class="p-mv__detail-wrapper">
+        <div class="p-mv__detail">
+          <h2 class="p-mv__title">
+            <img src="<?php echo get_template_directory_uri() ?>/images/top/mv_title.png" alt="伝統は手の中にある" width="840" height="314">
+          </h2>
+        </div>
+        <div class="p-mv__btn-wrapper">
+          <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-mv__btn">
+            <p class="p-mv__btn-text">entry</p>
+            <div class="p-mv__icon"></div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
+<figure class="p-mv__img js-blur">
+  <img src="<?php echo get_template_directory_uri() ?>/images/top/mv.webp" alt="伝統は手の中にある" width="1920" height="1080">
+</figure>
 <section class="p-top-next">
   <div class="l-inner">
     <div class="p-top-next__content">

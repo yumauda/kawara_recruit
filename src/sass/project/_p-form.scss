@@ -189,6 +189,8 @@
   border-radius: 9999px !important;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding-left: rem(20);
+  padding-right: rem(20);
 
   &:hover {
     background: #e77492 !important;
