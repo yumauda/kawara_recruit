@@ -64,6 +64,38 @@ jQuery(function ($) {
     tab_panel.attr("aria-hidden", true);
     $(tabID).attr("aria-hidden", false);
   }
+
+  // お問い合わせ：同意チェックがないと送信できないようにする
+  (function () {
+    var $privacyCheckbox = $(".p-contact__privacy-checkbox-input");
+    var $wpcf7Forms = $(".wpcf7 form");
+
+    if (!$privacyCheckbox.length || !$wpcf7Forms.length) return;
+
+    var $submitButtons = $wpcf7Forms.find(
+      ".wpcf7-submit, input[type='submit'], button[type='submit']"
+    );
+
+    var syncSubmitState = function () {
+      var isAgreed = $privacyCheckbox.is(":checked");
+      $submitButtons.prop("disabled", !isAgreed).attr("aria-disabled", !isAgreed);
+    };
+
+    syncSubmitState();
+
+    $privacyCheckbox.on("change", function () {
+      syncSubmitState();
+    });
+
+    $wpcf7Forms.on("submit", function (e) {
+      if ($privacyCheckbox.is(":checked")) return;
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      alert("個人情報等のお取り扱いに同意の上、送信してください。");
+      $privacyCheckbox.trigger("focus");
+      return false;
+    });
+  })();
   $("#drawer a[href]").on("click", function (event) {
     $(".p-drawer-icon").trigger("click");
   });

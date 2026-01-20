@@ -1420,6 +1420,14 @@ select::-ms-expand {
   color: #fff !important;
 }
 
+.wpcf7-submit:disabled,
+.p-form input[type=submit]:disabled,
+.p-form button[type=submit]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .p-form__btn input[type=submit] {
   transition: 0.3s ease-in-out;
   border-radius: 9999px;
@@ -2286,7 +2294,7 @@ input::placeholder {
   .p-mv__btn-wrapper {
     margin-top: initial;
     bottom: 2.5rem;
-    right: 2.5rem;
+    right: 5rem;
     position: absolute;
   }
 }

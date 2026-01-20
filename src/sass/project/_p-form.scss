@@ -198,6 +198,14 @@
   }
 }
 
+.wpcf7-submit:disabled,
+.p-form input[type="submit"]:disabled,
+.p-form button[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 
 .p-form__btn input[type="submit"] {
   transition: 0.3s ease-in-out;
