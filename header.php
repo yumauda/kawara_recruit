@@ -86,30 +86,66 @@
                                 </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
-                                    <span class="p-drawer-content__link-en">CONCEPT</span>
-                                    <span class="p-drawer-content__link-ja">コンセプト</span>
+                                <a href="https://kawara.first-step-yuma.com/about" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">ABOUT</span>
+                                    <span class="p-drawer-content__link-ja">石州瓦とは</span>
                                 </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
-                                    <span class="p-drawer-content__link-en">PRIDE</span>
-                                    <span class="p-drawer-content__link-ja">職人の矜持</span>
+                                <a href="https://kawara.first-step-yuma.com/reason" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">REASON</span>
+                                    <span class="p-drawer-content__link-ja">選ばれる理由</span>
                                 </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-drawer-content__link">
+                                <a href="https://kawara.first-step-yuma.com/product" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">PRODUCT</span>
+                                    <span class="p-drawer-content__link-ja">商品紹介</span>
+                                </a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="https://kawara.first-step-yuma.com/company" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">COMPANY</span>
+                                    <span class="p-drawer-content__link-ja">会社概要</span>
+                                </a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="https://kawara.first-step-yuma.com/topics" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">TOPICS</span>
+                                    <span class="p-drawer-content__link-ja">特集</span>
+                                </a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="https://kawara.first-step-yuma.com/news" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">NEWS</span>
+                                    <span class="p-drawer-content__link-ja">お知らせ</span>
+                                </a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="https://kawara.first-step-yuma.com/download" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">DOWNLOAD</span>
+                                    <span class="p-drawer-content__link-ja">製品資料</span>
+                                </a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="https://kawara.first-step-yuma.com/professional" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">PROFESSIONAL</span>
+                                    <span class="p-drawer-content__link-ja">プロ向け情報</span>
+                                </a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="https://kawara.first-step-yuma.com/recruit" class="p-drawer-content__link">
                                     <span class="p-drawer-content__link-en">RECRUIT</span>
-                                    <span class="p-drawer-content__link-ja">募集要項</span>
+                                    <span class="p-drawer-content__link-ja">採用情報</span>
                                 </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__link">
-                                    <span class="p-drawer-content__link-en">ENTRY</span>
-                                    <span class="p-drawer-content__link-ja">エントリー</span>
+                                <a href="https://kawara.first-step-yuma.com/contact" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">CONTACT</span>
+                                    <span class="p-drawer-content__link-ja">お問い合わせ</span>
                                 </a>
                             </li>
-                            
+
                         </ul>
 
                     </div>
