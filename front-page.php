@@ -94,7 +94,7 @@
       </div>
     </div>
   </section>
-  <section class="p-top-interview">
+  <section class="p-top-interview" id="anc02">
     <div class="l-inner">
       <div class="p-top-interview__content">
         <h3 class="p-top-interview__title">
@@ -202,7 +202,7 @@
     </div>
   </section>
 
-  <section class="p-recruit-info">
+  <section class="p-recruit-info" id="anc03">
     <div class="l-inner">
       <div class="p-recruit-info__row">
         <div class="p-recruit-info__top">
