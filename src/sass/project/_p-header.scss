@@ -99,7 +99,7 @@
   }
 }
 
-.p-header__logo-link::before {
+.p-header__logo-link--top::before {
   position: absolute;
   content: "Recruiting \A Website";
   color: #fff;
@@ -117,7 +117,7 @@
   }
 }
 
-.p-header__logo-link::after {
+.p-header__logo-link--top::after {
   position: absolute;
   content: "Heritage in Hands";
   color: #fff;
