@@ -13,6 +13,7 @@
   padding-left: rem(20);
   padding-right: rem(20);
   padding-top: rem(20);
+
   @include mq(lg) {
     padding-top: rem(30);
     padding-left: rem(40);
@@ -25,8 +26,10 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .p-header__nav {
   display: none;
+
   @include mq(md) {
     display: block;
   }
@@ -39,13 +42,13 @@
     justify-content: center;
     gap: rem(32);
   }
+
   @include mq(lg) {
     gap: rem(60);
   }
 }
 
-.p-header__nav-list {
-}
+.p-header__nav-list {}
 
 .p-header__nav-link {
   font-size: rem(14);
@@ -54,9 +57,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(18);
   }
@@ -67,26 +72,73 @@
   align-items: center;
   gap: rem(20);
   margin-left: auto;
+
   @include mq(md) {
     gap: rem(40);
     margin-left: initial;
   }
+
   @include mq(lg) {
     gap: rem(100);
   }
 }
-.p-header__logo {
-}
+
+.p-header__logo {}
+
 .p-header__logo-link {
   display: inline-block;
+  position: relative;
   width: rem(80);
+
   @include mq(md) {
     width: rem(120);
   }
+
   @include mq(lg) {
     width: rem(160);
   }
 }
+
+.p-header__logo-link::before {
+  position: absolute;
+  content: "Recruiting \A Website";
+  color: #fff;
+  font-family: $second-font-family;
+  font-weight: 600;
+  line-height: calc(24 / 20);
+  left: 0;
+  z-index: -1;
+  font-size: rem(12);
+  bottom: rem(-48);
+  @include mq(md) {
+    bottom: rem(-72);
+    font-size: rem(20);
+
+  }
+}
+
+.p-header__logo-link::after {
+  position: absolute;
+  content: "Heritage in Hands";
+  color: #fff;
+  background: #37af32;
+  font-family: $second-font-family;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1;
+  left: 0;
+  white-space: nowrap;
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  z-index: -1;
+  font-size: rem(20);
+  bottom: rem(-100);
+  @include mq(md) {
+    bottom: rem(-124);
+    font-size: rem(30);
+  }
+}
+
 .p-header__logo-link img {
   width: 100%;
   height: auto;
@@ -100,8 +152,8 @@
   gap: rem(14);
 }
 
-.p-header__breadcrumb {
-}
+.p-header__breadcrumb {}
+
 .p-header__breadcrumb-link {
   font-size: rem(14);
   font-weight: 700;
@@ -111,13 +163,16 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(14);
   }
 }
+
 .p-header__breadcrumb-link::before {
   position: absolute;
   content: "";
@@ -127,13 +182,16 @@
   left: 0;
   right: 0;
 }
+
 .p-header__breadcrumb-link--current {
   pointer-events: none;
   cursor: default;
 }
+
 .p-header__breadcrumb-link--current::before {
   display: none;
 }
+
 .p-header__breadcrumb-icon {
   font-size: rem(14);
   font-weight: 700;
@@ -142,16 +200,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
+
   @include mq(lg) {
     font-size: rem(14);
   }
 }
 
-.p-header__drawer {
-}
+.p-header__drawer {}
 
-.p-header__drawer-content {
-}
+.p-header__drawer-content {}

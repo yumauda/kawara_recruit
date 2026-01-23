@@ -29,7 +29,7 @@
 
 .p-table__body {
   padding: rem(8) rem(16);
-  background: #fff;
+  background: #ebebeb;
   border-radius: rem(4);
   display: block;
   @include mq(md){
@@ -38,7 +38,7 @@
   }
 }
 .p-table__table tr:nth-child(2n) .p-table__body {
-  background: #ebebeb;
+  background: #fff;
 }
 
 .p-table__select {

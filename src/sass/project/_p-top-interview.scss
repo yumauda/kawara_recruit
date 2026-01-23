@@ -112,6 +112,7 @@
 
 .p-top-interview__slider .swiper-slide {
   width: rem(340);
+
   @include mq(md) {
     width: rem(600);
   }
@@ -128,6 +129,7 @@
   font-weight: 700;
   color: #37AF32;
   letter-spacing: 0.06em;
+  line-height: 1;
 
   @include mq(md) {
     font-size: clamp(32px, 2vw, 40px);
@@ -140,6 +142,10 @@
 
 .p-top-interview__text-wrapper {
   margin-top: rem(10);
+
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 }
 
 .p-top-interview__detail-text {
