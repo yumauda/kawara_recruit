@@ -207,7 +207,23 @@
       <div class="p-recruit-info__row">
         <div class="p-recruit-info__top">
           <p class="p-recruit-info__en">_Recruit Info</p>
-          <h3 class="p-recruit-info__title">募集要項</h3>
+          <h3 class="p-recruit-info__title">
+            <svg class="p-recruit-info__title-svg" viewBox="0 0 420 120" preserveAspectRatio="xMinYMid meet" role="img" aria-label="募集要項">
+              <title>募集要項</title>
+              <defs>
+                <!-- Inner shadow: dx=0, dy=2, blur=2 相当 -->
+                <filter id="recruit-title-inner-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feOffset dx="0" dy="2"></feOffset>
+                  <feGaussianBlur stdDeviation="2" result="offset-blur"></feGaussianBlur>
+                  <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"></feComposite>
+                  <feFlood flood-color="#000000" flood-opacity="0.25" result="color"></feFlood>
+                  <feComposite operator="in" in="color" in2="inverse" result="shadow"></feComposite>
+                  <feComposite operator="over" in="shadow" in2="SourceGraphic"></feComposite>
+                </filter>
+              </defs>
+              <text class="p-recruit-info__title-svgText" x="0" y="92">募集要項</text>
+            </svg>
+          </h3>
         </div>
         <ul class="p-recruit-info__tab-item" role="tablist">
           <li class="p-recruit-info__tab-list" role="presentation">
