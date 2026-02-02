@@ -6,7 +6,7 @@
   color: $black;
   @include mq(md) {
     line-height: 1.75;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(18);

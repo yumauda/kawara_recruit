@@ -59,7 +59,7 @@
   justify-content: center;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -165,7 +165,7 @@
   position: relative;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -202,7 +202,7 @@
   justify-content: center;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {

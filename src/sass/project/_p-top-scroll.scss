@@ -153,7 +153,7 @@
   color: #222;
   @include mq(md) {
     margin-top: rem(40);
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     margin-top: rem(60);

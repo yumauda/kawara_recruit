@@ -28,7 +28,7 @@
   padding: rem(8) rem(16);
   background: #ebebeb;
   border-radius: rem(4);
-  text-shadow: inset 0 rem(2) rem(2) rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 rem(2) rem(2) rgba(0, 0, 0, 0.25);
   display: block;
   @include mq(md){
     display: table-cell;
@@ -46,7 +46,7 @@
   line-height: calc(28 / 20);
   letter-spacing: 0.06em;
   @include mq(md){
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg){
     font-size: rem(20);

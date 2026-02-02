@@ -53,7 +53,7 @@
 }
 
 .p-recruit-info__title {
-  font-size: rem(32);
+  font-size: rem(64);
   font-weight: 700;
   color: #37af32;
   line-height: 1;
@@ -111,8 +111,8 @@
 
   @include mq(md) {
     padding: rem(8);
-    font-size: clamp(14px, 2vw, 14px);
-    width: rem(240);
+    font-size: clamp(16px, 2vw, 16px);
+    width: rem(280);
   }
 
   @include mq(lg) {

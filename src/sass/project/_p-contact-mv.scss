@@ -1,7 +1,5 @@
 @use "../global" as *;
 
-.p-contact-mv {}
-
 .p-contact-mv__content {
   position: relative;
 }
@@ -60,15 +58,30 @@
 .p-contact-mv__title-ja {
   color: #37af32;
   font-weight: 900;
-  font-size: rem(32);
+  font-size: rem(64);
   letter-spacing: 0.1em;
   line-height: calc(140 / 100);
 
   @include mq(md) {
-    font-size: clamp(64px, 2vw, 64px);
+    font-size: clamp(80px, 2vw, 80px);
   }
 
   @include mq(lg) {
     font-size: rem(100);
   }
+}
+
+.p-contact-mv__title-jaSvg {
+  display: block;
+  width: auto;
+  height: 1em;
+  overflow: visible;
+}
+
+.p-contact-mv__title-jaSvgText {
+  fill: currentColor;
+  font-family: $base-font-family;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  filter: url(#contact-title-inner-shadow);
 }

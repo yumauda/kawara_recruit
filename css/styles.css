@@ -479,19 +479,34 @@ select::-ms-expand {
 .p-contact-mv__title-ja {
   color: #37af32;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 4rem;
   letter-spacing: 0.1em;
   line-height: 1.4;
 }
 @media screen and (min-width: 768px) {
   .p-contact-mv__title-ja {
-    font-size: clamp(64px, 2vw, 64px);
+    font-size: clamp(80px, 2vw, 80px);
   }
 }
 @media screen and (min-width: 1540px) {
   .p-contact-mv__title-ja {
     font-size: 6.25rem;
   }
+}
+
+.p-contact-mv__title-jaSvg {
+  display: block;
+  width: auto;
+  height: 1em;
+  overflow: visible;
+}
+
+.p-contact-mv__title-jaSvgText {
+  fill: currentColor;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  filter: url(#contact-title-inner-shadow);
 }
 
 .p-contact {
@@ -532,7 +547,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-contact__privacy-lead-text {
     text-align: center;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -613,7 +628,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-contact__privacy-box-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -712,6 +727,11 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-contact__privacy-checkbox-label {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-contact__privacy-checkbox-label {
     font-size: 1.25rem;
   }
 }
@@ -728,6 +748,16 @@ select::-ms-expand {
   font-weight: 700;
   letter-spacing: 0.06em;
   font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__privacy-required {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-contact__privacy-required {
+    font-size: 0.875rem;
+  }
 }
 
 .p-drawer-icon {
@@ -915,7 +945,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-drawer-content__link-en {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1101,7 +1131,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-footer__link {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1375,7 +1405,7 @@ select::-ms-expand {
   .p-form input[type=text],
   .p-form input[type=tel],
   .p-form input[type=email] {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-top: 0.8125rem;
     padding-bottom: 0.8125rem;
     padding-left: 1.5rem;
@@ -1400,7 +1430,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-form textarea {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1552,13 +1582,18 @@ input::placeholder {
     vertical-align: middle;
     width: 24%;
     display: table-cell;
-    font-size: 1.0625rem;
+    font-size: clamp(16px, 2vw, 16px);
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-top: initial;
     padding-bottom: initial;
     border-top: initial;
     border-bottom: initial;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-form__label {
+    font-size: 1.0625rem;
   }
 }
 .p-form__label label {
@@ -1611,6 +1646,16 @@ input::placeholder {
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 }
+@media screen and (min-width: 768px) {
+  .p-form__required {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-form__required {
+    font-size: 0.625rem;
+  }
+}
 
 .p-form__field {
   background: #fff;
@@ -1641,7 +1686,7 @@ input::placeholder {
   .p-form__field input[type=tel],
   .p-form__field input[type=email],
   .p-form__field input[type=date] {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1815,7 +1860,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-price__btn-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1909,7 +1954,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-header__nav-link {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2020,7 +2065,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-header__breadcrumb-link {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2059,7 +2104,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-header__breadcrumb-icon {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2413,7 +2458,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-mv__btn-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -2594,7 +2639,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-page-content__profile-text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     margin-top: 1.25rem;
   }
 }
@@ -2795,7 +2840,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-page-mv__detail-occupation {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3035,7 +3080,7 @@ input::placeholder {
 }
 
 .p-recruit-info__title {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 700;
   color: #37af32;
   line-height: 1;
@@ -3097,8 +3142,8 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-recruit-info__tab-btn {
     padding: 0.5rem;
-    font-size: clamp(14px, 2vw, 14px);
-    width: 15rem;
+    font-size: clamp(16px, 2vw, 16px);
+    width: 17.5rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3662,7 +3707,7 @@ input::placeholder {
   padding: 0.5rem 1rem;
   background: #ebebeb;
   border-radius: 0.25rem;
-  text-shadow: inset 0 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
   display: block;
 }
 @media screen and (min-width: 768px) {
@@ -3685,7 +3730,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-table__top {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3750,7 +3795,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-interview__topText {
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -3795,7 +3840,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-interview__link::before {
-    width: 27.5rem;
+    width: 33.75rem;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4041,7 +4086,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-next__text {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4244,7 +4289,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-top-scroll__text {
     margin-top: 2.5rem;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4262,7 +4307,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .c-main-text {
     line-height: 1.75;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -4355,7 +4400,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .c-main-title__en {
     margin-top: 0.875rem;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     letter-spacing: 0.2em;
   }
 }

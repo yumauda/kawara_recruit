@@ -33,7 +33,7 @@
 
   @include mq(md) {
     text-align: center;
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -107,7 +107,7 @@
   font-size: rem(14);
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
 
   @include mq(lg) {
@@ -202,8 +202,10 @@
   font-weight: 500;
   letter-spacing: 0.06em;
   font-size: rem(16);
-
-  @include mq(md) {
+  @include mq(md){
+    font-size: clamp(16px, 2vw, 16px);
+  }
+  @include mq(lg) {
     font-size: rem(20);
   }
 }
@@ -220,4 +222,10 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   font-size: rem(14);
+  @include mq(md){
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg){
+    font-size: rem(14);
+  }
 }

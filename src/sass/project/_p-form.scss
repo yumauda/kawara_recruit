@@ -137,7 +137,7 @@
   padding: rem(10) rem(12);
   background: #fff;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     padding-top: rem(13);
     padding-bottom: rem(13);
     padding-left: rem(24);
@@ -155,7 +155,7 @@
   background: #fff;
   font-size: rem(14);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(20);
@@ -297,13 +297,16 @@ input::placeholder {
     vertical-align: middle;
     width: 24%;
     display: table-cell;
-    font-size: rem(17);
+    font-size: clamp(16px, 2vw, 16px);
     padding-left: rem(20);
     padding-right: rem(20);
     padding-top: initial;
     padding-bottom: initial;
     border-top: initial;
     border-bottom: initial;
+  }
+  @include mq(lg){
+    font-size: rem(17);
   }
 
   label {
@@ -354,6 +357,12 @@ input::placeholder {
   font-weight: 700;
   padding: rem(4) rem(8);
   border-radius: rem(4);
+  @include mq(md){
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg){
+    font-size: rem(10);
+  }
 }
 
 .p-form__field {
@@ -378,7 +387,7 @@ input::placeholder {
     font-size: rem(14);
     padding: rem(12) rem(15);
     @include mq(md) {
-      font-size: clamp(14px, 2vw, 14px);
+      font-size: clamp(16px, 2vw, 16px);
     }
     @include mq(lg) {
       font-size: rem(20);
@@ -530,7 +539,7 @@ input::placeholder {
   font-style: italic;
 
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
   }
   @include mq(lg) {
     font-size: rem(20);

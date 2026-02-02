@@ -62,7 +62,7 @@
   font-weight: 600;
   @include mq(md) {
     margin-top: rem(14);
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 16px);
     letter-spacing: 0.2em;
   }
   @include mq(lg){
