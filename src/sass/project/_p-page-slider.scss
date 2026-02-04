@@ -46,7 +46,7 @@
 .p-page-slider__item {
   position: relative;
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
 }
 
@@ -70,9 +70,16 @@
   width: 100%;
   white-space: nowrap;
   padding-left: rem(20);
+  margin-top: rem(32);
 
   @include mq(md) {
     padding-left: rem(30);
+    margin-top: rem(56);
+  }
+
+  @include mq(lg) {
+    margin-top: rem(80);
+
   }
 }
 
@@ -129,6 +136,20 @@
 .slider-interview {
   padding-top: rem(60) !important;
   padding-bottom: rem(60) !important;
+}
+
+.slider-page-interview .swiper-wrapper {
+  height: rem(220);
+
+  @include mq(md) {
+    height: rem(280);
+  }
+
+  @include mq(lg) {
+
+    height: rem(320);
+  }
+
 }
 
 .slider-page-interview .swiper-slide {

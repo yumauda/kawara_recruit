@@ -7,7 +7,7 @@
           <img src="<?php echo get_template_directory_uri() ?>/images/interview01/page_mv_01.webp" alt="" width="1920" height="1080">
         </figure>
         <div class="p-page-mv__detail">
-          <h2 class="p-page-mv__title">瓦一枚に<br>込める誇り</h2>
+          <h2 class="p-page-mv__title">伝統の価値を<br>語る誇り</h2>
           <div class="p-page-mv__detail-row">
             <p class="p-page-mv__detail-occupation">2003年入社 営業部 主任</p>
             <p class="p-page-mv__detail-name">柳光&emsp;雅英</p>
@@ -28,46 +28,49 @@
             <p class="p-page-content__name-ja">柳光&emsp;雅英</p>
             <p class="p-page-content__name-en">RYUKOU MASAHIDE</p>
           </div>
-          <p class="p-page-content__profile-text">プロフィール文が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
         </div>
         <div class="p-page-content__right">
           <div class="p-page-content__block">
-            <h3 class="p-page-content__title">タイトルが入ります。<br>ダミーテキストダミーテキスト</h3>
-            <p class="p-page-content__text">インタビュー内容が入ります。ダミーテキスト<br>
-              木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。<br>
-              道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、蔦のかずらを頼みにしたような危い場処ではなくなって、徳川時代の末にはすでに渡ることのできる橋であった。</p>
+            <h3 class="p-page-content__title">はじまり ― 瓦と歩んできた年月</h3>
+            <p class="p-page-content__text">もともとはハウスメーカーで働いていましたが、県外から地元にUターンしたことをきっかけに石州瓦の仕事に出会いました。<br>
+              それまで瓦について詳しく知らなかったのですが、知れば知るほど「こんなにも機能性に優れた素材なんだ」と驚かされました。特に耐久性や地域に根差した産業としての魅力を知るほど、瓦そのものへの興味がどんどん深まっていき、この仕事に挑戦してみたいという気持ちが強くなりました。<br>
+              地元の産業に関わりながら、その魅力を伝えられることにやりがいを感じています。</p>
             <figure class="p-page-content__main-img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg01.webp" alt="" width="900" height="500">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg01.webp" alt="インタビュー写真" width="900" height="500">
             </figure>
           </div>
           <div class="p-page-content__block">
-            <h3 class="p-page-content__title">タイトルが入ります。<br>ダミーテキストダミーテキスト</h3>
-            <p class="p-page-content__text">インタビュー内容が入ります。ダミーテキスト<br>
-              木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。<br>
-              道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、蔦のかずらを頼みにしたような危い場処ではなくなって、徳川時代の末にはすでに渡ることのできる橋であった。</p>
-            <div class="p-page-content__img-row">
-              <figure class="p-page-content__row-img">
-                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg02.webp" alt="" width="440" height="300">
-              </figure>
-              <figure class="p-page-content__row-img">
-                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg03.webp" alt="" width="440" height="300">
-              </figure>
-            </div>
+            <h3 class="p-page-content__title">瓦を“売る”ではなく“伝える”</h3>
+            <p class="p-page-content__text">石州瓦の大きな価値は、何といってもその圧倒的な耐久性にあります。<br>
+              素材そのものが非常に強く、長い年月にわたって家を守ってくれます。また、塩害保証を持っている点も唯一無二で、海に近い地域でも安心して使えるという大きな強みです。<br>
+              営業としてお客様と話す際にも、価格や見た目だけでなく、暮らしを長く支える“機能としての価値”をしっかり伝えることを心がけています。<br>
+              性能を知っていただくと、ほとんどのお客様が「なるほど」と納得してくださいます。</p>
           </div>
           <div class="p-page-content__block">
-            <h3 class="p-page-content__title">タイトルが入ります。<br>ダミーテキストダミーテキスト</h3>
-            <p class="p-page-content__text">インタビュー内容が入ります。ダミーテキスト<br>
-              木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。<br>
-              道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、蔦のかずらを頼みにしたような危い場処ではなくなって、徳川時代の末にはすでに渡ることのできる橋であった。</p>
+            <h3 class="p-page-content__title">職人とともに ― チームでつくる屋根</h3>
+            <p class="p-page-content__text">瓦百景の強みは、部署間の距離が近く、誰とでも気軽に話ができる環境が整っているところです。営業と工場がしっかり連携しており、品質管理に関する最新の情報をリアルタイムで共有できるため、お客様へ正確な説明ができます。<br>
+              また、職人とのやり取りも密で、現場で起きていることがすぐにフィードバックされるので、よりよい提案や改善がしやすい点も魅力です。<br>
+              チーム全体で一つの屋根をつくっているという一体感を日々感じながら働いています。</p>
 
           </div>
-          <div class="p-page-content__block">
-            <h3 class="p-page-content__title">タイトルが入ります。<br>ダミーテキストダミーテキスト</h3>
-            <p class="p-page-content__text">インタビュー内容が入ります。ダミーテキスト<br>
-              木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。<br>
-              道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、蔦のかずらを頼みにしたような危い場処ではなくなって、徳川時代の末にはすでに渡ることのできる橋であった。</p>
-            <figure class="p-page-content__main-img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg04.webp" alt="" width="900" height="500">
+          <div class="p-page-content__img-row">
+            <figure class="p-page-content__row-img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg02.webp" alt="インタビュー写真" width="440" height="300">
+            </figure>
+            <figure class="p-page-content__row-img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg03.webp" alt="インタビュー写真" width="440" height="300">
+            </figure>
+          </div>
+          
+          <div class="p-page-content__block mt100">
+            <h3 class="p-page-content__title">時代とともに ― 変わりゆくニーズの中で</h3>
+            <p class="p-page-content__text">家を建てる世代が変わるにつれ、情報の受け取り方も大きく変化していると感じます。<br>
+              今はSNSの影響力が非常に強く、営業としてもそこを活かしたPRの必要性を強く意識しています。最新のトレンドを追いかけながら、時代に合わせて柔軟に発信方法を変えていくことが大切だと思っています。<br>
+              石州瓦の価値を正しく伝えるためにも、伝統だけに頼らず、新しい媒体やコミュニケーションの形を積極的に取り入れるよう心がけています。</p>
+            <h3 class="p-page-content__title mt100">あなたにとって石州瓦とは？</h3>
+            <p class="p-page-content__text p-page-content__text-bottom">世界一だと胸を張れる、誇りの産地です。</p>
+            <figure class="p-page-content__main-img mt100">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/interview01/content_mainImg04.webp" alt="インタビュー写真" width="900" height="500">
             </figure>
           </div>
         </div>

@@ -108,56 +108,110 @@
               <div class="swiper-slide">
                 <a href="<?php echo esc_url(home_url('/interview01/')); ?>" class="p-top-interview__link">
                   <div class="p-top-interview__detail">
-                    <p class="p-top-interview__detail-title">瓦一枚に<br>込める誇り</p>
+                    <p class="p-top-interview__detail-title">伝統の価値を<br>語る誇り</p>
                     <div class="p-top-interview__text-wrapper">
-                      <p class="p-top-interview__detail-text">_瓦を造るということは、</p>
-                      <p class="p-top-interview__detail-text">単なる生業ではない。</p>
+                      <p class="p-top-interview__detail-text">_石州瓦に向き合うことは、</p>
+                      <p class="p-top-interview__detail-text">歴史を受け継ぐということ。</p>
                     </div>
                     <div class="p-top-interview__name-wrapper">
-                      <p class="p-top-interview__year">0000年入社 〇〇部 役職名</p>
-                      <p class="p-top-interview__name">佐藤 浩二</p>
+                      <p class="p-top-interview__year">2003年入社 営業部 主任</p>
+                      <p class="p-top-interview__name">柳光 雅英</p>
                     </div>
                   </div>
                   <figure class="p-top-interview__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview01.webp" alt="職人のプライド" width="457" height="174">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview01.webp" alt="柳光 雅英" width="457" height="174">
                   </figure>
 
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="p-top-interview__link">
+                <a href="<?php echo esc_url(home_url('/interview02/')); ?>" class="p-top-interview__link">
                   <div class="p-top-interview__detail">
-                    <p class="p-top-interview__detail-title">文化を守り<br>技を継ぐ</p>
+                    <p class="p-top-interview__detail-title">形づくる手に<br>宿る技</p>
                     <div class="p-top-interview__text-wrapper">
-                      <p class="p-top-interview__detail-text">_瓦を焼く。</p>
-                      <p class="p-top-interview__detail-text">それは遺産を築くこと。</p>
+                      <p class="p-top-interview__detail-text">_一枚の始まりは、</p>
+                      <p class="p-top-interview__detail-text">職人の手の感覚から生まれる。</p>
                     </div>
                     <div class="p-top-interview__name-wrapper">
-                      <p class="p-top-interview__year">0000年入社 〇〇部 役職名</p>
-                      <p class="p-top-interview__name">佐藤 浩二</p>
+                      <p class="p-top-interview__year">2005年入社 製造部 課長</p>
+                      <p class="p-top-interview__name">佐々木 渉</p>
                     </div>
                   </div>
                   <figure class="p-top-interview__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview02.webp" alt="職人のプライド" width="457" height="174">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview02.webp" alt="佐々木 渉" width="457" height="174">
                   </figure>
 
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="p-top-interview__link">
+                <a href="<?php echo esc_url(home_url('/interview03/')); ?>" class="p-top-interview__link">
                   <div class="p-top-interview__detail">
-                    <p class="p-top-interview__detail-title">土と火に<br>生きる</p>
+                    <p class="p-top-interview__detail-title">一枚を整える<br>まなざし</p>
                     <div class="p-top-interview__text-wrapper">
-                      <p class="p-top-interview__detail-text">_手が歴史を形づくる限り、</p>
-                      <p class="p-top-interview__detail-text">伝統は決して終わらない。</p>
+                      <p class="p-top-interview__detail-text">_細部を見極めるその視線が、</p>
+                      <p class="p-top-interview__detail-text">品質を支えている。</p>
                     </div>
                     <div class="p-top-interview__name-wrapper">
-                      <p class="p-top-interview__year">0000年入社 〇〇部 役職名</p>
-                      <p class="p-top-interview__name">佐藤 浩二</p>
+                      <p class="p-top-interview__year">2002年入社 製造部</p>
+                      <p class="p-top-interview__name">村上 浩</p>
                     </div>
                   </div>
                   <figure class="p-top-interview__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview03.webp" alt="職人のプライド" width="457" height="174">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview03.webp" alt="村上 浩" width="457" height="174">
+                  </figure>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="<?php echo esc_url(home_url('/interview04/')); ?>" class="p-top-interview__link">
+                  <div class="p-top-interview__detail">
+                    <p class="p-top-interview__detail-title">仕上げを導く<br>感覚の技</p>
+                    <div class="p-top-interview__text-wrapper">
+                      <p class="p-top-interview__detail-text">_経験が形に変わる瞬間が、</p>
+                      <p class="p-top-interview__detail-text">瓦の表情を決めていく。</p>
+                    </div>
+                    <div class="p-top-interview__name-wrapper">
+                      <p class="p-top-interview__year">1995年入社 製造部</p>
+                      <p class="p-top-interview__name">高井 良昌</p>
+                    </div>
+                  </div>
+                  <figure class="p-top-interview__img">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview04.webp" alt="高井 良昌" width="457" height="174">
+                  </figure>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="<?php echo esc_url(home_url('/interview05/')); ?>" class="p-top-interview__link">
+                  <div class="p-top-interview__detail">
+                    <p class="p-top-interview__detail-title">伝統を刻む&emsp;<br>職人の手</p>
+                    <div class="p-top-interview__text-wrapper">
+                      <p class="p-top-interview__detail-text">_積み重ねた時間だけが、</p>
+                      <p class="p-top-interview__detail-text">本物の形をつくり出す。</p>
+                    </div>
+                    <div class="p-top-interview__name-wrapper">
+                      <p class="p-top-interview__year">2000年入社 製造部(鬼師)</p>
+                      <p class="p-top-interview__name">林 洋司</p>
+                    </div>
+                  </div>
+                  <figure class="p-top-interview__img w283">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview05.webp" alt="林 洋司" width="457" height="174">
+                  </figure>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="<?php echo esc_url(home_url('/interview06/')); ?>" class="p-top-interview__link">
+                  <div class="p-top-interview__detail">
+                    <p class="p-top-interview__detail-title">現場を支える<br>段取り力</p>
+                    <div class="p-top-interview__text-wrapper">
+                      <p class="p-top-interview__detail-text">_見えない調整が、</p>
+                      <p class="p-top-interview__detail-text">現場全体の流れを整えていく。</p>
+                    </div>
+                    <div class="p-top-interview__name-wrapper">
+                      <p class="p-top-interview__year">1993年入社 業務部</p>
+                      <p class="p-top-interview__name">松村 麻子</p>
+                    </div>
+                  </div>
+                  <figure class="p-top-interview__img">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/top/interview06.webp" alt="松村 麻子" width="457" height="174">
                   </figure>
                 </a>
               </div>
