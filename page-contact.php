@@ -11,7 +11,7 @@
             <span class="p-contact-mv__title-en">_Entry</span>
             <span class="p-contact-mv__title-ja">
               <svg class="p-contact-mv__title-jaSvg" viewBox="0 0 420 120" preserveAspectRatio="xMinYMid meet" role="img" aria-label="募集要項">
-                <title>募集要項</title>
+                <title>エントリー</title>
                 <defs>
                   <!-- Inner shadow: dx=0, dy=2, blur=2 相当 -->
                   <filter id="contact-title-inner-shadow" x="-50%" y="-50%" width="200%" height="200%">
@@ -23,7 +23,7 @@
                     <feComposite operator="over" in="shadow" in2="SourceGraphic"></feComposite>
                   </filter>
                 </defs>
-                <text class="p-contact-mv__title-jaSvgText" x="0" y="92">募集要項</text>
+                <text class="p-contact-mv__title-jaSvgText" x="0" y="92">エントリー</text>
               </svg>
             </span>
           </h2>

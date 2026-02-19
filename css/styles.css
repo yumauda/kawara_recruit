@@ -901,11 +901,14 @@ select::-ms-expand {
 
 .p-drawer-content__lists {
   padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.25rem;
+  row-gap: 2rem;
 }
 @media screen and (min-width: 768px) {
   .p-drawer-content__lists {
     padding-bottom: initial;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
   }
@@ -913,15 +916,6 @@ select::-ms-expand {
 
 .p-drawer-content__list {
   text-align: center;
-}
-
-.p-drawer-content__list + .p-drawer-content__list {
-  margin-top: 1.875rem;
-}
-@media screen and (min-width: 768px) {
-  .p-drawer-content__list + .p-drawer-content__list {
-    margin-top: initial;
-  }
 }
 
 .p-drawer-content__link {

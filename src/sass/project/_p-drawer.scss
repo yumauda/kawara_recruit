@@ -142,9 +142,12 @@
 .p-drawer-content__lists {
   padding-bottom: rem(64);
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: rem(20);
+  row-gap: rem(32);
   @include mq(md) {
     padding-bottom: initial;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: rem(40);
   }
@@ -153,12 +156,12 @@
 .p-drawer-content__list {
   text-align: center;
 }
-.p-drawer-content__list + .p-drawer-content__list {
-  margin-top: rem(30);
-  @include mq(md){
-    margin-top: initial;
-  }
-}
+// .p-drawer-content__list + .p-drawer-content__list {
+//   margin-top: rem(30);
+//   @include mq(md){
+//     margin-top: initial;
+//   }
+// }
 .p-drawer-content__link {
   display: flex;
   flex-direction: column;
