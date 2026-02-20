@@ -201,6 +201,12 @@
                                 </a>
                             </li>
                             <li class="p-drawer-content__list">
+                                <a href="https://kawara.first-step-yuma.com/example" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-en">EXAMPLE</span>
+                                    <span class="p-drawer-content__link-ja">施工事例</span>
+                                </a>
+                            </li>
+                            <li class="p-drawer-content__list">
                                 <a href="https://kawara.first-step-yuma.com/news" class="p-drawer-content__link">
                                     <span class="p-drawer-content__link-en">NEWS</span>
                                     <span class="p-drawer-content__link-ja">お知らせ</span>
